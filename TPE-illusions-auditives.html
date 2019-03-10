@@ -1,0 +1,1003 @@
+<!DOCTYPE html><html lang=""><head>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.8">
+    <!-- End of generator meta tag -->
+    <script type="text/javascript" src="https://editor.silex.me/static/2.8/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.8/jquery-ui.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.8/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.8/front-end.js" data-silex-static=""></script>
+    <link rel="stylesheet" href="https://editor.silex.me/static/2.8/normalize.css" data-silex-static="">
+    <link rel="stylesheet" href="https://editor.silex.me/static/2.8/front-end.css" data-silex-static="">
+
+    <style type="text/css" class="silex-style"></style>
+    <script type="text/javascript" class="silex-script">
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}</script>
+    <style class="silex-inline-styles" type="text/css">.body-initial {background-color: transparent;}.silex-id-1478366444112-1 {top: 5px; background-color: rgba(32,66,222,1); left: 5px; min-width: 1097px;}.silex-id-1478366444112-0 {min-height: 378px; background-color: rgba(32,66,222,1); width: 1097px; top: 15px; left: 100px;}.silex-id-1552034320375-1 {width: 1195px; min-height: 385px; top: 22px; left: -50px; background-color: rgba(32,66,222,1);}.silex-id-1551197838734-4 {top: 418px; left: 5px; background-color: rgba(0,154,235,1); min-width: 78px;}.silex-id-1551197838730-3 {width: 78px; min-height: 100px; top: 15px; left: 661px;}.silex-id-1551258188927-3 {width: 1202px; background-color: transparent; min-height: 108px; top: 9px; left: 205px;}.silex-id-1551198299819-11 {width: 154px; min-height: 60px; top: 22px; left: 1038px;}.silex-id-1551198242938-10 {width: 126px; min-height: 60px; top: 21px; left: 842px;}.silex-id-1551198178397-9 {width: 266px; min-height: 60px; top: 21px; left: 513px;}.silex-id-1551197975682-7 {width: 107px; min-height: 52px; top: 20px; left: 192px;}.silex-id-1551197896370-6 {width: 93px; min-height: 60px; top: 21px; left: 38px;}.silex-id-1552146860648-4 {width: 100px; min-height: 60px; top: 20px; left: 379px;}.silex-id-1474394621033-3 {top: 511px; left: 5px; background-color: rgba(8,68,248,1); min-width: 1195px;}.silex-id-1474394621032-2 {min-height: 784px; background-color: rgba(255,255,255,1); width: 1195px; top: 15px; left: 100px;}.silex-id-1551257998957-1 {width: 406px; min-height: 318px; top: 40px; left: 405px;}.silex-id-1552225483831-5 {width: 322px; min-height: 588px; top: 40px; left: 75px;}.silex-id-1552225517068-6 {width: 322px; min-height: 588px; top: 40px; left: 815px;}.silex-id-1551258081740-2 {width: 404px; min-height: 51px; top: 571px; left: 405px;}.silex-id-1551258868910-5 {background-color: rgba(32,66,222,1); min-width: 1195px; top: 441px; left: 5px;}.silex-id-1551258868907-4 {width: 1195px; background-color: rgba(255,255,255,1); min-height: 655px; top: 15px; left: 116px;}.silex-id-1551259589894-6 {width: 505px; min-height: 96px; top: 11px; left: 332px;}.silex-id-1551261918326-20 {width: 360px; background-color: transparent; min-height: 164px; top: 92px; left: 48px;}.silex-id-1551259819453-8 {width: 349px; min-height: 60px; top: 103px; left: 9px; background-color: rgba(0,154,235,1);}.silex-id-1551259734283-7 {width: 350px; min-height: 60px; top: 53px; left: 9px; background-color: rgba(0,154,235,1);}.silex-id-1551266656096-74 {width: 712px; min-height: 501px; top: 122px; left: 469px;}.silex-id-1551260374706-10 {min-width: 1195px; background-color: rgba(32,66,222,1); top: 441px; left: 5px;}.silex-id-1551260374704-9 {width: 1195px; background-color: rgba(255,255,255,1); min-height: 8547px; top: 15px; left: 100px;}.silex-id-1551260704551-13 {width: 206px; min-height: 61px; top: 265px; left: 92px;}.silex-id-1551266812911-78 {width: 149px; min-height: 58px; top: 9px; left: 32px;}.silex-id-1551715280795-53 {width: 267px; min-height: 138px; top: 17px; left: 907px;}.silex-id-1551260416965-11 {width: 607px; min-height: 140px; top: 86px; left: 279px;}.silex-id-1551266314770-73 {width: 45px; min-height: 41px; top: 8490px; left: 6px;}.silex-id-1551266107761-71 {width: 1083px; min-height: 100px; top: 8197px; left: 77px;}.silex-id-1551265962108-70 {width: 816px; min-height: 66px; top: 8153px; left: 212px;}.silex-id-1551265938870-69 {width: 392px; min-height: 723px; top: 7427px; left: 410px;}.silex-id-1551265787221-68 {width: 1083px; min-height: 154px; top: 7249px; left: 77px;}.silex-id-1551265563544-67 {width: 1053px; min-height: 72px; top: 7170px; left: 131px;}.silex-id-1551265337323-65 {width: 686px; min-height: 53px; top: 7096px; left: 283px;}.silex-id-1551265045321-61 {width: 312px; min-height: 89px; top: 6105px; left: 436px;}.silex-id-1551265142124-63 {width: 1083px; min-height: 321px; top: 6140px; left: 77px;}.silex-id-1551264787071-58 {width: 531px; min-height: 89px; top: 5258px; left: 336px;}.silex-id-1551264700925-56 {width: 1083px; min-height: 493px; top: 4077px; left: 77px;}.silex-id-1551264612572-55 {width: 247px; min-height: 54px; top: 4040px; left: 71px;}.silex-id-1551264345920-53 {width: 962px; min-height: 89px; top: 3819px; left: 163px;}.silex-id-1551264306206-52 {width: 364px; min-height: 483px; top: 3333px; left: 417px;}.silex-id-1551261533703-19 {width: 1083px; min-height: 292px; top: 3030px; left: 77px;}.silex-id-1551264093759-51 {width: 802px; min-height: 65px; top: 2997px; left: 212px;}.silex-id-1551263991098-49 {width: 621px; min-height: 65px; top: 2360px; left: 306px;}.silex-id-1551261104836-18 {width: 1083px; min-height: 249px; top: 1527px; left: 77px;}.silex-id-1551263799089-46 {width: 521px; min-height: 65px; top: 1487px; left: 334px;}.silex-id-1551263727524-44 {width: 384px; min-height: 331px; top: 1141px; left: 420px; background-color: transparent;}.silex-id-1551263786258-45 {width: 75px; min-height: 96px; top: 1142px; left: 343px;}.silex-id-1551261053515-17 {width: 265px; min-height: 52px; top: 1028px; left: 92px;}.silex-id-1551260965930-16 {width: 1083px; min-height: 100px; top: 613px; left: 77px;}.silex-id-1551260767808-14 {width: 1083px; min-height: 144px; top: 315px; left: 77px;}.silex-id-1551260930580-15 {width: 215px; min-height: 52px; top: 567px; left: 92px;}.silex-id-1551828555744-1 {width: 371px; background-color: rgb(255, 255, 255); min-height: 42px; top: 8497px; left: 64px;}.silex-id-1552058579303-71 {width: 430px; min-height: 415px; top: 1906px; left: 155px;}.silex-id-1552058623608-72 {width: 327px; min-height: 472px; top: 1859px; left: 669px;}.silex-id-1552058653650-73 {width: 694px; min-height: 437px; top: 2506px; left: 237px;}.silex-id-1552058782174-75 {width: 836px; min-height: 637px; top: 6442px; left: 198px;}.silex-id-1551265529914-66 {width: 20px; min-height: 26px; top: 6613px; left: 619px;}.silex-id-1552058832614-76 {width: 744px; min-height: 457px; top: 5650px; left: 215px;}.silex-id-1552058861626-77 {width: 637px; min-height: 685px; top: 4543px; left: 270px;}.silex-id-1552059703606-81 {width: 263px; background-color: rgb(255, 255, 255); min-height: 84px; top: 8447px; left: 925px;}.silex-id-1552059580767-79 {width: 59px; min-height: 51px; top: 23px; left: 199px;}.silex-id-1552059634464-80 {width: 164px; background-color: rgb(255, 255, 255); min-height: 30px; top: 35px; left: 33px;}.silex-id-1551264941508-59 {width: 1083px; min-height: 341px; top: 5301px; left: 77px;}.silex-id-1551262496892-21 {width: 1083px; min-height: 143px; top: 3881px; left: 77px;}.silex-id-1551266697215-76 {background-color: rgba(32,66,222,1); min-width: 1195px; top: 584px; left: 5px;}.silex-id-1551266697213-75 {width: 1195px; background-color: rgba(255,255,255,1); min-height: 2012px; top: 15px; left: 100px;}.silex-id-1551266745818-77 {width: 152px; min-height: 64px; top: 10px; left: 40px;}.silex-id-1551267105385-82 {width: 277px; min-height: 65px; top: 807px; left: 488px;}.silex-id-1551267194085-83 {width: 1083px; min-height: 170px; top: 888px; left: 77px;}.silex-id-1551267438668-88 {width: 216px; min-height: 85px; top: 1666px; left: 820px;}.silex-id-1551267242577-84 {width: 497px; min-height: 342px; top: 1292px; left: 70px;}.silex-id-1551267264788-85 {width: 533px; min-height: 69px; top: 1635px; left: 63px;}.silex-id-1551267373295-87 {width: 340px; min-height: 52px; top: 1633px; left: 756px;}.silex-id-1551267333328-86 {width: 422px; min-height: 311px; top: 1324px; left: 701px;}.silex-id-1551267516057-89 {width: 46px; min-height: 48px; top: 1950px; left: 1148px;}.silex-id-1551866184285-1 {width: 347px; background-color: rgb(255, 255, 255); min-height: 36px; top: 1958px; left: 801px;}.silex-id-1552058531654-70 {width: 779px; min-height: 518px; top: 287px; left: 189px;}.silex-id-1551266940892-80 {width: 663px; min-height: 120px; top: 85px; left: 233px;}.silex-id-1551715249045-52 {width: 272px; min-height: 140px; top: 17px; left: 907px;}.silex-id-1551430602560-1 {background-color: rgba(32,66,222,1); top: 511px; left: 5px; min-width: 1195px;}.silex-id-1551430602557-0 {width: 1195px; background-color: rgba(255,255,255,1); min-height: 710px; top: 15px; left: 112px;}.silex-id-1551430633731-2 {width: 392px; background-color: rgb(255, 255, 255); min-height: 422px; top: 175px; left: 50px;}.silex-id-1551710678640-34 {width: 312px; min-height: 50px; top: 35px; left: 27px; background-color: rgba(178,215,247,1);}.silex-id-1551710550623-33 {width: 312px; min-height: 50px; top: 92px; left: 27px; background-color: rgba(178,215,247,1);}.silex-id-1551430659235-3 {width: 262px; min-height: 60px; top: 164px; left: 77px; background-color: rgba(0,154,235,1);}.silex-id-1551430900553-4 {width: 262px; min-height: 60px; top: 220px; left: 77px; background-color: rgba(0,154,235,1);}.silex-id-1551430961793-5 {width: 262px; min-height: 60px; top: 277px; left: 77px; background-color: rgba(0,154,235,1);}.silex-id-1551431122455-6 {width: 462px; min-height: 120px; top: 42px; left: 377px;}.silex-id-1551714920181-49 {width: 555px; min-height: 359px; top: 205px; left: 533px;}.silex-id-1551431363291-8 {top: 511px; left: 5px; min-width: 1195px; background-color: rgba(32,66,222,1);}.silex-id-1551431363288-7 {width: 1195px; background-color: rgba(255,255,255,1); min-height: 4065px; top: 15px; left: 100px;}.silex-id-1551431474886-10 {width: 339px; min-height: 100px; top: 103px; left: 404px;}.silex-id-1551431398719-9 {width: 268px; min-height: 60px; top: 15px; left: 36px;}.silex-id-1551435252245-36 {width: 463px; min-height: 61px; top: 237px; left: 92px;}.silex-id-1551714843001-47 {width: 259px; min-height: 194px; top: 17px; left: 919px;}.silex-id-1551821112227-2 {width: 900px; background-color: rgb(255, 255, 255); min-height: 500px; top: 507px; left: 159px;}.silex-id-1551712592626-46 {width: 288px; min-height: 61px; top: 1079px; left: 92px;}.silex-id-1551782074662-4 {width: 485px; min-height: 337px; top: 1330px; left: 318px;}.silex-id-1551781894572-2 {width: 931px; min-height: 415px; top: 1766px; left: 120px;}.silex-id-1551782096186-5 {width: 1083px; min-height: 52px; top: 1699px; left: 77px;}.silex-id-1551712332469-45 {width: 1083px; min-height: 100px; top: 283px; left: 77px;}.silex-id-1551782209104-6 {width: 1083px; min-height: 100px; top: 2153px; left: 77px;}.silex-id-1552054991812-55 {width: 1083px; min-height: 100px; top: 2226px; left: 77px;}.silex-id-1551782707616-9 {width: 1083px; min-height: 124px; top: 2571px; left: 77px;}.silex-id-1552053006025-49 {width: 1083px; min-height: 198px; top: 2825px; left: 77px;}.silex-id-1552055340664-56 {width: 1083px; min-height: 100px; top: 2972px; left: 77px;}.silex-id-1552059897613-88 {width: 263px; background-color: rgb(255, 255, 255); min-height: 84px; top: 3970px; left: 930px;}.silex-id-1552059897613-89 {width: 59px; min-height: 51px; top: 23px; left: 199px;}.silex-id-1552059897616-90 {width: 164px; background-color: rgb(255, 255, 255); min-height: 30px; top: 35px; left: 33px;}.silex-id-1552061185894-101 {width: 44px; min-height: 46px; top: 4007px; left: 11px;}.silex-id-1552061200664-102 {width: 191px; background-color: rgb(255, 255, 255); min-height: 29px; top: 4016px; left: 60px;}.silex-id-1551782471765-7 {width: 1083px; min-height: 263px; top: 2275px; left: 77px;}.silex-id-1551782523400-8 {width: 368px; min-height: 60px; top: 2541px; left: 92px;}.silex-id-1552053551403-50 {width: 853px; min-height: 85px; top: 3014px; left: 235px;}.silex-id-1552053619306-51 {width: 20px; min-height: 65px; top: 3032px; left: 208px;}.silex-id-1551782784949-10 {width: 545px; min-height: 355px; top: 3114px; left: 343px;}.silex-id-1552053905375-52 {width: 1083px; min-height: 382px; top: 3506px; left: 77px;}.silex-id-1551782005519-3 {width: 1083px; min-height: 180px; top: 1106px; left: 77px;}.silex-id-1552052960806-48 {width: 1083px; min-height: 297px; top: 2645px; left: 77px;}.silex-id-1551431534260-12 {background-color: rgba(32,66,222,1); min-width: 1195px;}.silex-id-1551431534258-11 {width: 1195px; background-color: rgba(255,255,255,1); min-height: 5230px; top: 15px; left: 100px;}.silex-id-1551431566878-13 {width: 260px; min-height: 60px; top: 15px; left: 42px;}.silex-id-1551714869784-48 {width: 298px; min-height: 169px; top: 17px; left: 879px;}.silex-id-1551431599813-14 {width: 424px; min-height: 100px; top: 104px; left: 352px;}.silex-id-1551781064322-1 {width: 920px; min-height: 512px; top: 3916px; left: 174px;}.silex-id-1551709859059-24 {width: 1083px; min-height: 153px; top: 3624px; left: 77px;}.silex-id-1551709361790-21 {width: 1083px; min-height: 124px; top: 3547px; left: 77px;}.silex-id-1551709293430-20 {width: 1191px; min-height: 89px; top: 3467px; left: 1px;}.silex-id-1551709109978-17 {width: 1083px; min-height: 100px; top: 3331px; left: 77px;}.silex-id-1551709537193-23 {width: 1083px; min-height: 100px; top: 3276px; left: 77px;}.silex-id-1551709054991-16 {width: 1083px; min-height: 189px; top: 3132px; left: 77px;}.silex-id-1551709002484-15 {width: 1083px; min-height: 100px; top: 2995px; left: 77px;}.silex-id-1551708951700-14 {width: 1083px; min-height: 52px; top: 2930px; left: 77px;}.silex-id-1551708830940-11 {width: 508px; min-height: 436px; top: 2282px; left: 317px;}.silex-id-1551708744501-10 {width: 1083px; min-height: 109px; top: 2133px; left: 77px;}.silex-id-1551708709723-9 {width: 505px; min-height: 432px; top: 1677px; left: 323px;}.silex-id-1551708664042-8 {width: 1083px; min-height: 124px; top: 1542px; left: 77px;}.silex-id-1551708619689-7 {width: 762px; min-height: 513px; top: 1048px; left: 212px;}.silex-id-1551708577611-6 {width: 1083px; min-height: 164px; top: 844px; left: 77px;}.silex-id-1551708444308-4 {width: 1083px; min-height: 136px; top: 502px; left: 77px;}.silex-id-1551709433533-22 {width: 1083px; min-height: 79px; top: 389px; left: 77px;}.silex-id-1551708075590-1 {width: 1083px; min-height: 174px; top: 263px; left: 77px;}.silex-id-1551708372859-3 {width: 85px; min-height: 68px; top: 467px; left: 222px;}.silex-id-1551820694112-1 {width: 270px; background-color: rgb(255, 255, 255); min-height: 45px; top: 479px; left: 347px;}.silex-id-1551708906199-13 {width: 1083px; min-height: 184px; top: 2781px; left: 77px;}.silex-id-1551865425277-0 {width: 388px; min-height: 100px; top: 719px; left: 77px;}.silex-id-1551708858171-12 {width: 163px; min-height: 89px; top: 2711px; left: 480px;}.silex-id-1551710256678-31 {width: 1034px; min-height: 52px; top: 4936px; left: 77px;}.silex-id-1552039764336-43 {width: 701px; min-height: 65px; top: 4816px; left: 260px;}.silex-id-1552039954412-44 {width: 20px; min-height: 65px; top: 4818px; left: 236px;}.silex-id-1552059878692-85 {width: 263px; background-color: rgb(255, 255, 255); min-height: 84px; top: 5135px; left: 6px;}.silex-id-1552059878692-86 {width: 59px; min-height: 51px; top: 26px; left: 5px;}.silex-id-1552059878694-87 {width: 164px; background-color: rgb(255, 255, 255); min-height: 30px; top: 33px; left: 67px;}.silex-id-1552061086214-99 {width: 41px; min-height: 46px; top: 5166px; left: 1148px;}.silex-id-1552061113949-100 {width: 187px; background-color: rgb(255, 255, 255); min-height: 29px; top: 5175px; left: 959px;}.silex-id-1551709185764-18 {width: 500px; min-height: 57px; top: 777px; left: 370px;}.silex-id-1551710073992-27 {width: 1191px; min-height: 65px; top: 4653px; left: 0px;}.silex-id-1551710016646-26 {width: 1083px; min-height: 200px; top: 4423px; left: 83px;}.silex-id-1551709227981-19 {width: 166px; min-height: 69px; top: 3467px; left: 486px;}.silex-id-1551710193005-30 {width: 1083px; min-height: 174px; top: 4897px; left: 77px;}.silex-id-1551710122057-28 {width: 1083px; min-height: 181px; top: 4736px; left: 77px;}.silex-id-1551431636726-16 {background-color: rgba(32,66,222,1); min-width: 1195px;}.silex-id-1551431636724-15 {width: 1195px; background-color: rgba(255,255,255,1); min-height: 2592px; top: 15px; left: 100px;}.silex-id-1551431688032-17 {width: 258px; min-height: 60px; top: 14px; left: 40px;}.silex-id-1551431736266-18 {width: 362px; min-height: 82px; top: 112px; left: 391px;}.silex-id-1552056799251-58 {width: 1083px; min-height: 100px; top: 734px; left: 77px;}.silex-id-1552056272083-57 {width: 1083px; min-height: 549px; top: 233px; left: 77px;}.silex-id-1551956324635-1 {width: 271px; background-color: rgb(255, 255, 255); min-height: 44px; top: 826px; left: 339px;}.silex-id-1552057078466-60 {width: 1083px; min-height: 100px; top: 995px; left: 77px;}.silex-id-1552056965832-59 {width: 1083px; min-height: 100px; top: 988px; left: 77px;}.silex-id-1552057796533-65 {width: 1083px; min-height: 100px; top: 1878px; left: 77px;}.silex-id-1552057853921-66 {width: 1083px; min-height: 252px; top: 1989px; left: 77px;}.silex-id-1552057977447-68 {width: 1079px; min-height: 100px; top: 2178px; left: 91px;}.silex-id-1552058074033-69 {width: 224px; background-color: rgb(255, 255, 255); min-height: 49px; top: 2196px; left: 308px;}.silex-id-1552057928786-67 {width: 1083px; min-height: 100px; top: 2239px; left: 77px;}.silex-id-1552059916754-93 {width: 164px; background-color: rgb(255, 255, 255); min-height: 30px; top: 2547px; left: 511px;}.silex-id-1552059916751-92 {width: 59px; min-height: 51px; top: 2489px; left: 558px;}.silex-id-1552060862333-94 {width: 44px; min-height: 49px; top: 2530px; left: 1143px;}.silex-id-1552060888110-95 {width: 40px; min-height: 49px; top: 2532px; left: 16px;}.silex-id-1552060978214-97 {width: 179px; background-color: rgb(255, 255, 255); min-height: 29px; top: 2543px; left: 963px;}.silex-id-1552060913361-96 {width: 210px; background-color: rgb(255, 255, 255); min-height: 34px; top: 2542px; left: 67px;}.silex-id-1552057486790-63 {width: 1083px; min-height: 187px; top: 891px; left: 77px;}.silex-id-1552057136625-61 {width: 503px; min-height: 359px; top: 1220px; left: 341px;}.silex-id-1552057739081-64 {width: 1083px; min-height: 100px; top: 1595px; left: 77px;}.silex-id-1552057155157-62 {width: 857px; min-height: 100px; top: 1571px; left: 186px;}.silex-id-1551715463787-58 {width: 268px; min-height: 188px; top: 17px; left: 907px;}.silex-id-1551432928757-21 {top: 511px; left: 5px; background-color: rgba(32,66,222,1); min-width: 1195px;}.silex-id-1551432928753-20 {width: 1195px; background-color: rgba(255,255,255,1); min-height: 7270px; top: 15px; left: 100px;}.silex-id-1551433350971-22 {width: 132px; min-height: 82px; top: 90px; left: 559px;}.silex-id-1552036171540-12 {width: 333px; min-height: 195px; top: 269px; left: 58px;}.silex-id-1552036204658-13 {width: 732px; min-height: 234px; top: 243px; left: 427px;}.silex-id-1552036729368-14 {width: 1083px; min-height: 100px; top: 461px; left: 77px;}.silex-id-1552036819146-15 {width: 708px; min-height: 334px; top: 777px; left: 221px;}.silex-id-1552036964556-17 {width: 424px; min-height: 350px; top: 1336px; left: 345px;}.silex-id-1552037053063-20 {width: 1083px; min-height: 100px; top: 1696px; left: 77px;}.silex-id-1552037127268-21 {width: 476px; min-height: 335px; top: 1967px; left: 326px;}.silex-id-1552037417527-22 {width: 1082px; min-height: 247px; top: 2333px; left: 77px;}.silex-id-1552037482281-23 {width: 548px; min-height: 351px; top: 2555px; left: 315px;}.silex-id-1552037528921-24 {width: 821px; min-height: 64px; top: 2907px; left: 224px;}.silex-id-1552037722889-25 {width: 1083px; min-height: 223px; top: 2962px; left: 77px;}.silex-id-1552037791215-26 {width: 776px; min-height: 438px; top: 3169px; left: 198px;}.silex-id-1552037816097-27 {width: 1083px; min-height: 100px; top: 3642px; left: 77px;}.silex-id-1552037904003-28 {width: 352px; min-height: 287px; top: 3807px; left: 380px;}.silex-id-1552037958102-29 {width: 1195px; background-color: rgb(255, 255, 255); min-height: 282px; top: 4097px; left: 0px;}.silex-id-1552037972374-30 {width: 1083px; min-height: 223px; top: 0px; left: 77px;}.silex-id-1552038068476-31 {width: 575px; min-height: 65px; top: 190px; left: 147px;}.silex-id-1551433723591-27 {width: 100px; min-height: 68px; top: 135px; left: 503px;}.silex-id-1552035091269-2 {width: 665px; min-height: 376px; top: 4370px; left: 230px;}.silex-id-1552038220195-32 {width: 1083px; min-height: 410px; top: 4775px; left: 77px;}.silex-id-1552038306324-33 {width: 660px; min-height: 360px; top: 5175px; left: 252px;}.silex-id-1552038340242-34 {width: 1083px; min-height: 267px; top: 5554px; left: 77px;}.silex-id-1552038397813-35 {width: 602px; min-height: 370px; top: 5784px; left: 282px;}.silex-id-1552038423488-36 {width: 1083px; min-height: 227px; top: 6155px; left: 77px;}.silex-id-1552038486043-37 {width: 671px; min-height: 458px; top: 6349px; left: 247px;}.silex-id-1551434297618-34 {width: 1194px; background-color: rgb(255, 255, 255); min-height: 289px; top: 6823px; left: 1px;}.silex-id-1551434294131-33 {width: 1083px; min-height: 103px; top: 13px; left: 77px;}.silex-id-1551434397927-35 {width: 357px; min-height: 79px; top: 176px; left: 213px;}.silex-id-1552036893953-16 {width: 1083px; min-height: 122px; top: 1179px; left: 77px;}.silex-id-1552051987347-47 {width: 243px; min-height: 65px; top: 1101px; left: 442px;}.silex-id-1552051927594-46 {width: 544px; min-height: 65px; top: 2293px; left: 297px;}.silex-id-1552059750700-82 {width: 263px; background-color: rgb(255, 255, 255); min-height: 84px; top: 7170px; left: 930px;}.silex-id-1552059750701-83 {width: 59px; min-height: 51px; top: 23px; left: 199px;}.silex-id-1552059750704-84 {width: 164px; background-color: rgb(255, 255, 255); min-height: 30px; top: 35px; left: 33px;}.silex-id-1551715225791-51 {width: 300px; min-height: 158px; top: 17px; left: 879px;}.silex-id-1551710927834-36 {min-width: 1195px; background-color: rgba(32,66,222,1);}.silex-id-1551710927831-35 {width: 1195px; background-color: rgba(255,255,255,1); min-height: 1008px; top: 15px; left: 110px;}.silex-id-1551711038542-38 {width: 268px; min-height: 82px; top: 17px; left: 34px;}.silex-id-1551710986391-37 {width: 768px; min-height: 82px; top: 97px; left: 243px;}.silex-id-1551711134867-41 {width: 398px; min-height: 89px; top: 279px; left: 437px; background-color: rgba(0,154,235,1);}.silex-id-1551715345603-55 {width: 298px; min-height: 169px; top: 242px; left: 140px;}.silex-id-1551711280771-43 {width: 398px; min-height: 81px; top: 790px; left: 435px; background-color: rgba(0,154,235,1);}.silex-id-1551715367020-56 {width: 298px; min-height: 194px; top: 732px; left: 140px;}.silex-id-1551711191027-42 {width: 398px; min-height: 87px; top: 521px; left: 437px; background-color: rgba(0,154,235,1);}.silex-id-1551715426950-57 {width: 298px; min-height: 188px; top: 475px; left: 140px;}.silex-id-1552035578570-4 {background-color: rgba(32,66,222,1); min-width: 1195px;}.silex-id-1552035578565-3 {width: 1195px; background-color: rgba(255,255,255,1); min-height: 1004px; top: 15px; left: 100px;}.silex-id-1552035703235-6 {width: 231px; min-height: 100px; top: 30px; left: 470px;}.silex-id-1552035879438-9 {width: 1083px; min-height: 100px; top: 415px; left: 77px;}.silex-id-1552035930784-10 {width: 1083px; min-height: 100px; top: 560px; left: 77px;}.silex-id-1552035985047-11 {width: 1083px; min-height: 100px; top: 637px; left: 77px;}.silex-id-1552150636375-22 {width: 87px; background-color: rgb(255, 255, 255); min-height: 84px; top: 37px; left: 706px;}.silex-id-1552035752851-7 {width: 1083px; min-height: 321px; top: 136px; left: 77px;}.silex-id-1552035797267-8 {width: 1083px; min-height: 134px; top: 329px; left: 77px;}.silex-id-1552222864687-0 {width: 402px; min-height: 103px; top: 893px; left: 784px;}.silex-id-1552038685668-39 {min-width: 1195px; background-color: rgba(32,66,222,1);}.silex-id-1552038685663-38 {width: 1195px; background-color: rgba(255,255,255,1); min-height: 3982px; top: 15px; left: 100px;}.silex-id-1552038818805-42 {width: 236px; min-height: 380px; top: 27px; left: 906px;}.silex-id-1552063469227-103 {width: 183px; min-height: 69px; top: 245px; left: 108px;}.silex-id-1552063534457-104 {width: 793px; min-height: 401px; top: 315px; left: 77px;}.silex-id-1552038730215-40 {width: 154px; min-height: 100px; top: 62px; left: 499px;}.silex-id-1552140443661-0 {width: 166px; min-height: 69px; top: 1024px; left: 108px;}.silex-id-1552215689077-25 {width: 353px; min-height: 69px; top: 2060px; left: 108px;}.silex-id-1552215628920-24 {width: 789px; min-height: 100px; top: 2109px; left: 77px;}.silex-id-1552140485970-1 {width: 789px; min-height: 482px; top: 1082px; left: 77px;}.silex-id-1552156215807-1 {background-color: rgba(32,66,222,1); min-width: 1195px;}.silex-id-1552156215802-0 {width: 1195px; background-color: rgba(255,255,255,1); min-height: 3984px; top: 15px; left: 100px;}.silex-id-1552210473900-1 {width: 256px; min-height: 59px; top: 3px; left: 22px;}.silex-id-1552210711065-3 {width: 1083px; min-height: 129px; top: 213px; left: 77px;}.silex-id-1552210742353-4 {width: 1083px; min-height: 149px; top: 293px; left: 77px;}.silex-id-1552210767792-5 {width: 271px; background-color: rgb(255, 255, 255); min-height: 44px; top: 381px; left: 224px;}.silex-id-1552210888184-6 {width: 1083px; min-height: 154px; top: 436px; left: 77px;}.silex-id-1552210924174-7 {width: 499px; min-height: 380px; top: 568px; left: 359px;}.silex-id-1552210932537-8 {width: 155px; min-height: 26px; top: 961px; left: 542px;}.silex-id-1552210519901-2 {width: 441px; min-height: 82px; top: 100px; left: 391px;}.silex-id-1552211022120-9 {width: 1083px; min-height: 410px; top: 957px; left: 77px;}.silex-id-1552215249224-21 {width: 1083px; min-height: 100px; top: 1284px; left: 77px;}.silex-id-1552212638090-19 {width: 37px; min-height: 39px; top: 3929px; left: 1138px;}.silex-id-1552212668879-20 {width: 363px; background-color: rgb(255, 255, 255); min-height: 29px; top: 3938px; left: 764px;}.silex-id-1552212564765-18 {width: 1083px; min-height: 100px; top: 3654px; left: 77px;}.silex-id-1552212347276-17 {width: 824px; background-color: rgb(255, 255, 255); min-height: 504px; top: 3113px; left: 198px;}.silex-id-1552212300061-16 {width: 1083px; min-height: 100px; top: 2832px; left: 77px;}.silex-id-1552211877494-12 {width: 1083px; min-height: 100px; top: 2500px; left: 84px;}.silex-id-1552211168502-11 {width: 304px; background-color: rgb(255, 255, 255); min-height: 504px; top: 1946px; left: 447px;}.silex-id-1552215386043-22 {width: 194px; min-height: 199px; top: 1393px; left: 507px;}.silex-id-1552215488832-23 {width: 1083px; min-height: 100px; top: 1605px; left: 77px;}.silex-id-1552211081826-10 {width: 1083px; min-height: 198px; top: 1719px; left: 77px;}.silex-id-1552212033900-13 {width: 469px; min-height: 65px; top: 2707px; left: 164px;}.silex-id-1552212197148-15 {width: 288px; min-height: 65px; top: 2705px; left: 637px;}.silex-id-1552210463909-0 {width: 300px; min-height: 168px; top: 17px; left: 892px;}</style>
+    <title></title>
+    <script type="text/json" class="silex-json-styles">[{"fonts":[{"family":"'Roboto', sans-serif","href":"https://fonts.googleapis.com/css?family=Roboto"}],"desktop":{"body-initial":{"background-color":"transparent"},"silex-id-1474394621033-3":{"top":"511px","left":"5px","background-color":"rgba(8,68,248,1)","min-width":"1195px"},"silex-id-1474394621032-2":{"min-height":"784px","background-color":"rgba(255,255,255,1)","width":"1195px","top":"15px","left":"100px","height":""},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1442914737143-3":{"min-height":"53px","width":"349px","top":"29px","left":"430px","height":""},"silex-id-1478366444112-0":{"min-height":"378px","background-color":"rgba(32,66,222,1)","width":"1097px","top":"15px","left":"100px","height":""},"silex-id-1478366444112-1":{"top":"5px","background-color":"rgba(32,66,222,1)","left":"5px","height":"","min-width":"1097px"},"silex-id-1478366450713-2":{"min-height":"38px","background-color":"transparent","width":"1209px","top":"15px","left":"100px","height":""},"silex-id-1551197816146-1":{"width":"","background-color":"","min-height":"20px"},"silex-id-1551197838730-3":{"width":"78px","background-color":"","min-height":"100px","top":"15px","left":"661px"},"silex-id-1551197838734-4":{"top":"418px","left":"5px","background-color":"rgba(0,154,235,1)","min-width":"78px"},"silex-id-1551197896370-6":{"width":"93px","min-height":"60px","top":"21px","left":"38px"},"silex-id-1551197975682-7":{"width":"107px","min-height":"52px","top":"20px","left":"192px"},"silex-id-1551198031844-8":{"width":"1109px","min-height":"61px","top":"236px","left":"66px"},"silex-id-1551198178397-9":{"width":"266px","min-height":"60px","top":"21px","left":"513px"},"silex-id-1551198242938-10":{"width":"126px","min-height":"60px","top":"21px","left":"842px"},"silex-id-1551198299819-11":{"width":"154px","min-height":"60px","top":"22px","left":"1038px"},"silex-id-1551257998957-1":{"width":"406px","min-height":"318px","top":"40px","left":"405px"},"silex-id-1551258081740-2":{"width":"404px","min-height":"51px","top":"571px","left":"405px"},"silex-id-1551258188927-3":{"width":"1202px","background-color":"transparent","min-height":"108px","top":"9px","left":"205px"},"silex-id-1551258868907-4":{"width":"1195px","background-color":"rgba(255,255,255,1)","min-height":"655px","top":"15px","left":"116px"},"silex-id-1551258868910-5":{"background-color":"rgba(32,66,222,1)","min-width":"1195px","top":"441px","left":"5px"},"silex-id-1551259589894-6":{"width":"505px","min-height":"96px","top":"11px","left":"332px"},"silex-id-1551259734283-7":{"width":"350px","min-height":"60px","top":"53px","left":"9px","background-color":"rgba(0,154,235,1)"},"silex-id-1551259819453-8":{"width":"349px","min-height":"60px","top":"103px","left":"9px","background-color":"rgba(0,154,235,1)"},"silex-id-1551260374704-9":{"width":"1195px","background-color":"rgba(255,255,255,1)","min-height":"8547px","top":"15px","left":"100px"},"silex-id-1551260374706-10":{"min-width":"1195px","background-color":"rgba(32,66,222,1)","top":"441px","left":"5px"},"silex-id-1551260416965-11":{"width":"607px","min-height":"140px","top":"86px","left":"279px"},"silex-id-1551260704551-13":{"width":"206px","min-height":"61px","top":"265px","left":"92px"},"silex-id-1551260767808-14":{"width":"1083px","min-height":"144px","top":"315px","left":"77px"},"silex-id-1551260930580-15":{"width":"215px","min-height":"52px","top":"567px","left":"92px"},"silex-id-1551260965930-16":{"width":"1083px","min-height":"100px","top":"613px","left":"77px"},"silex-id-1551261053515-17":{"width":"265px","min-height":"52px","top":"1028px","left":"92px"},"silex-id-1551261104836-18":{"width":"1083px","min-height":"249px","top":"1527px","left":"77px"},"silex-id-1551261533703-19":{"width":"1083px","min-height":"292px","top":"3030px","left":"77px"},"silex-id-1551261918326-20":{"width":"360px","background-color":"transparent","min-height":"164px","top":"92px","left":"48px"},"silex-id-1551262496892-21":{"width":"1083px","min-height":"143px","top":"3881px","left":"77px"},"silex-id-1551262909710-24":{"width":"1049px","min-height":"220px","top":"2875px","left":"115px"},"silex-id-1551262909712-25":{"width":"607px","min-height":"140px","top":"74px","left":"371px"},"silex-id-1551262909712-26":{"width":"475px","min-height":"52px","top":"265px","left":"92px"},"silex-id-1551262909713-27":{"width":"1067px","min-height":"144px","top":"305px","left":"90px"},"silex-id-1551262909713-28":{"width":"215px","min-height":"52px","top":"482px","left":"90px"},"silex-id-1551262909714-29":{"width":"1065px","min-height":"100px","top":"520px","left":"89px"},"silex-id-1551262909714-30":{"width":"265px","min-height":"52px","top":"783px","left":"90px"},"silex-id-1551262909715-31":{"width":"1053px","min-height":"249px","top":"1299px","left":"96px"},"silex-id-1551262909716-32":{"width":"1054px","min-height":"144px","top":"3763px","left":"107px"},"silex-id-1551262909710-23":{"width":"1196px","background-color":"rgba(243,244,250,1)","min-height":"4808px","top":"15px","left":"118px"},"silex-id-1551263016566-35":{"width":"1049px","min-height":"220px","top":"2875px","left":"115px"},"silex-id-1551263016568-36":{"width":"607px","min-height":"140px","top":"74px","left":"371px"},"silex-id-1551263016568-37":{"width":"475px","min-height":"52px","top":"265px","left":"92px"},"silex-id-1551263016569-38":{"width":"1067px","min-height":"144px","top":"305px","left":"90px"},"silex-id-1551263016570-39":{"width":"215px","min-height":"52px","top":"482px","left":"90px"},"silex-id-1551263016571-40":{"width":"1065px","min-height":"100px","top":"520px","left":"89px"},"silex-id-1551263016572-41":{"width":"265px","min-height":"52px","top":"783px","left":"90px"},"silex-id-1551263016572-42":{"width":"1053px","min-height":"249px","top":"1299px","left":"96px"},"silex-id-1551263016573-43":{"width":"1054px","min-height":"144px","top":"3763px","left":"107px"},"silex-id-1551263016566-34":{"width":"1196px","background-color":"rgba(243,244,250,1)","min-height":"4808px","top":"15px","left":"118px"},"silex-id-1551263727524-44":{"width":"384px","min-height":"331px","top":"1141px","left":"420px","background-color":"transparent"},"silex-id-1551263786258-45":{"width":"75px","min-height":"96px","top":"1142px","left":"343px"},"silex-id-1551263799089-46":{"width":"521px","min-height":"65px","top":"1487px","left":"334px"},"silex-id-1551263991098-49":{"width":"621px","min-height":"65px","top":"2360px","left":"306px"},"silex-id-1551264093759-51":{"width":"802px","min-height":"65px","top":"2997px","left":"212px"},"silex-id-1551264306206-52":{"width":"364px","min-height":"483px","top":"3333px","left":"417px"},"silex-id-1551264345920-53":{"width":"962px","min-height":"89px","top":"3819px","left":"163px"},"silex-id-1551264612572-55":{"width":"247px","min-height":"54px","top":"4040px","left":"71px"},"silex-id-1551264700925-56":{"width":"1083px","min-height":"493px","top":"4077px","left":"77px"},"silex-id-1551264787071-58":{"width":"531px","min-height":"89px","top":"5258px","left":"336px"},"silex-id-1551264941508-59":{"width":"1083px","min-height":"341px","top":"5301px","left":"77px"},"silex-id-1551265045321-61":{"width":"312px","min-height":"89px","top":"6105px","left":"436px"},"silex-id-1551265142124-63":{"width":"1083px","min-height":"321px","top":"6140px","left":"77px"},"silex-id-1551265337323-65":{"width":"686px","min-height":"53px","top":"7096px","left":"283px"},"silex-id-1551265529914-66":{"width":"20px","min-height":"26px","top":"6613px","left":"619px"},"silex-id-1551265563544-67":{"width":"1053px","min-height":"72px","top":"7170px","left":"131px"},"silex-id-1551265787221-68":{"width":"1083px","min-height":"154px","top":"7249px","left":"77px"},"silex-id-1551265938870-69":{"width":"392px","min-height":"723px","top":"7427px","left":"410px"},"silex-id-1551265962108-70":{"width":"816px","min-height":"66px","top":"8153px","left":"212px"},"silex-id-1551266107761-71":{"width":"1083px","min-height":"100px","top":"8197px","left":"77px"},"silex-id-1551266314770-73":{"width":"45px","min-height":"41px","top":"8490px","left":"6px"},"silex-id-1551266656096-74":{"width":"712px","min-height":"501px","top":"122px","left":"469px"},"silex-id-1551266697213-75":{"width":"1195px","background-color":"rgba(255,255,255,1)","min-height":"2012px","top":"15px","left":"100px"},"silex-id-1551266697215-76":{"background-color":"rgba(32,66,222,1)","min-width":"1195px","top":"584px","left":"5px"},"silex-id-1551266745818-77":{"width":"152px","min-height":"64px","top":"10px","left":"40px"},"silex-id-1551266812911-78":{"width":"149px","min-height":"58px","top":"9px","left":"32px"},"silex-id-1551266940892-80":{"width":"663px","min-height":"120px","top":"85px","left":"233px"},"silex-id-1551267105385-82":{"width":"277px","min-height":"65px","top":"807px","left":"488px"},"silex-id-1551267194085-83":{"width":"1083px","min-height":"170px","top":"888px","left":"77px"},"silex-id-1551267242577-84":{"width":"497px","min-height":"342px","top":"1292px","left":"70px"},"silex-id-1551267264788-85":{"width":"533px","min-height":"69px","top":"1635px","left":"63px"},"silex-id-1551267333328-86":{"width":"422px","min-height":"311px","top":"1324px","left":"701px"},"silex-id-1551267373295-87":{"width":"340px","min-height":"52px","top":"1633px","left":"756px"},"silex-id-1551267438668-88":{"width":"216px","min-height":"85px","top":"1666px","left":"820px"},"silex-id-1551267516057-89":{"width":"46px","min-height":"48px","top":"1950px","left":"1148px"},"silex-id-1551430602557-0":{"width":"1195px","background-color":"rgba(255,255,255,1)","min-height":"710px","top":"15px","left":"112px"},"silex-id-1551430602560-1":{"background-color":"rgba(32,66,222,1)","top":"511px","left":"5px","min-width":"1195px"},"silex-id-1551430633731-2":{"width":"392px","background-color":"rgb(255, 255, 255)","min-height":"422px","top":"175px","left":"50px"},"silex-id-1551430659235-3":{"width":"262px","min-height":"60px","top":"164px","left":"77px","background-color":"rgba(0,154,235,1)"},"silex-id-1551430900553-4":{"width":"262px","min-height":"60px","top":"220px","left":"77px","background-color":"rgba(0,154,235,1)"},"silex-id-1551430961793-5":{"width":"262px","min-height":"60px","top":"277px","left":"77px","background-color":"rgba(0,154,235,1)"},"silex-id-1551431122455-6":{"width":"462px","min-height":"120px","top":"42px","left":"377px"},"silex-id-1551431363288-7":{"width":"1195px","background-color":"rgba(255,255,255,1)","min-height":"4065px","top":"15px","left":"100px"},"silex-id-1551431363291-8":{"top":"511px","left":"5px","min-width":"1195px","background-color":"rgba(32,66,222,1)"},"silex-id-1551431398719-9":{"width":"268px","min-height":"60px","top":"15px","left":"36px"},"silex-id-1551431474886-10":{"width":"339px","min-height":"100px","top":"103px","left":"404px"},"silex-id-1551431534258-11":{"width":"1195px","background-color":"rgba(255,255,255,1)","min-height":"5230px","top":"15px","left":"100px"},"silex-id-1551431534260-12":{"background-color":"rgba(32,66,222,1)","min-width":"1195px"},"silex-id-1551431566878-13":{"width":"260px","min-height":"60px","top":"15px","left":"42px"},"silex-id-1551431599813-14":{"width":"424px","min-height":"100px","top":"104px","left":"352px"},"silex-id-1551431636724-15":{"width":"1195px","background-color":"rgba(255,255,255,1)","min-height":"2592px","top":"15px","left":"100px"},"silex-id-1551431636726-16":{"background-color":"rgba(32,66,222,1)","min-width":"1195px"},"silex-id-1551431688032-17":{"width":"258px","min-height":"60px","top":"14px","left":"40px"},"silex-id-1551431736266-18":{"width":"362px","min-height":"82px","top":"112px","left":"391px"},"silex-id-1551432928753-20":{"width":"1195px","background-color":"rgba(255,255,255,1)","min-height":"7270px","top":"15px","left":"100px"},"silex-id-1551432928757-21":{"top":"511px","left":"5px","background-color":"rgba(32,66,222,1)","min-width":"1195px"},"silex-id-1551433350971-22":{"width":"132px","min-height":"82px","top":"90px","left":"559px"},"silex-id-1551433723591-27":{"width":"100px","min-height":"68px","top":"135px","left":"503px"},"silex-id-1551434294131-33":{"width":"1083px","min-height":"103px","top":"13px","left":"77px"},"silex-id-1551434297618-34":{"width":"1194px","background-color":"rgb(255, 255, 255)","min-height":"289px","top":"6823px","left":"1px"},"silex-id-1551434397927-35":{"width":"357px","min-height":"79px","top":"176px","left":"213px"},"silex-id-1551435252245-36":{"width":"463px","min-height":"61px","top":"237px","left":"92px"},"silex-id-1551708075590-1":{"width":"1083px","min-height":"174px","top":"263px","left":"77px"},"silex-id-1551708372859-3":{"width":"85px","min-height":"68px","top":"467px","left":"222px"},"silex-id-1551708444308-4":{"width":"1083px","min-height":"136px","top":"502px","left":"77px"},"silex-id-1551708577611-6":{"width":"1083px","min-height":"164px","top":"844px","left":"77px"},"silex-id-1551708619689-7":{"width":"762px","min-height":"513px","top":"1048px","left":"212px"},"silex-id-1551708664042-8":{"width":"1083px","min-height":"124px","top":"1542px","left":"77px"},"silex-id-1551708709723-9":{"width":"505px","min-height":"432px","top":"1677px","left":"323px"},"silex-id-1551708744501-10":{"width":"1083px","min-height":"109px","top":"2133px","left":"77px"},"silex-id-1551708830940-11":{"width":"508px","min-height":"436px","top":"2282px","left":"317px"},"silex-id-1551708858171-12":{"width":"163px","min-height":"89px","top":"2711px","left":"480px"},"silex-id-1551708906199-13":{"width":"1083px","min-height":"184px","top":"2781px","left":"77px"},"silex-id-1551708951700-14":{"width":"1083px","min-height":"52px","top":"2930px","left":"77px"},"silex-id-1551709002484-15":{"width":"1083px","min-height":"100px","top":"2995px","left":"77px"},"silex-id-1551709054991-16":{"width":"1083px","min-height":"189px","top":"3132px","left":"77px"},"silex-id-1551709109978-17":{"width":"1083px","min-height":"100px","top":"3331px","left":"77px"},"silex-id-1551709185764-18":{"width":"500px","min-height":"57px","top":"777px","left":"370px"},"silex-id-1551709227981-19":{"width":"166px","min-height":"69px","top":"3467px","left":"486px"},"silex-id-1551709293430-20":{"width":"1191px","min-height":"89px","top":"3467px","left":"1px"},"silex-id-1551709361790-21":{"width":"1083px","min-height":"124px","top":"3547px","left":"77px"},"silex-id-1551709433533-22":{"width":"1083px","min-height":"79px","top":"389px","left":"77px"},"silex-id-1551709537193-23":{"width":"1083px","min-height":"100px","top":"3276px","left":"77px"},"silex-id-1551709859059-24":{"width":"1083px","min-height":"153px","top":"3624px","left":"77px"},"silex-id-1551710016646-26":{"width":"1083px","min-height":"200px","top":"4423px","left":"83px"},"silex-id-1551710073992-27":{"width":"1191px","min-height":"65px","top":"4653px","left":"0px"},"silex-id-1551710122057-28":{"width":"1083px","min-height":"181px","top":"4736px","left":"77px"},"silex-id-1551710193005-30":{"width":"1083px","min-height":"174px","top":"4897px","left":"77px"},"silex-id-1551710256678-31":{"width":"1034px","min-height":"52px","top":"4936px","left":"77px"},"silex-id-1551710550623-33":{"width":"312px","min-height":"50px","top":"92px","left":"27px","background-color":"rgba(178,215,247,1)"},"silex-id-1551710678640-34":{"width":"312px","min-height":"50px","top":"35px","left":"27px","background-color":"rgba(178,215,247,1)"},"silex-id-1551710927831-35":{"width":"1195px","background-color":"rgba(255,255,255,1)","min-height":"1008px","top":"15px","left":"110px"},"silex-id-1551710927834-36":{"min-width":"1195px","background-color":"rgba(32,66,222,1)"},"silex-id-1551710986391-37":{"width":"768px","min-height":"82px","top":"97px","left":"243px"},"silex-id-1551711038542-38":{"width":"268px","min-height":"82px","top":"17px","left":"34px"},"silex-id-1551711134867-41":{"width":"398px","min-height":"89px","top":"279px","left":"437px","background-color":"rgba(0,154,235,1)"},"silex-id-1551711191027-42":{"width":"398px","min-height":"87px","top":"521px","left":"437px","background-color":"rgba(0,154,235,1)"},"silex-id-1551711280771-43":{"width":"398px","min-height":"81px","top":"790px","left":"435px","background-color":"rgba(0,154,235,1)"},"silex-id-1551712332469-45":{"width":"1083px","min-height":"100px","top":"283px","left":"77px"},"silex-id-1551712592626-46":{"width":"288px","min-height":"61px","top":"1079px","left":"92px"},"silex-id-1551714843001-47":{"width":"259px","min-height":"194px","top":"17px","left":"919px"},"silex-id-1551714869784-48":{"width":"298px","min-height":"169px","top":"17px","left":"879px"},"silex-id-1551714920181-49":{"width":"555px","min-height":"359px","top":"205px","left":"533px"},"silex-id-1551715225791-51":{"width":"300px","min-height":"158px","top":"17px","left":"879px"},"silex-id-1551715249045-52":{"width":"272px","min-height":"140px","top":"17px","left":"907px"},"silex-id-1551715280795-53":{"width":"267px","min-height":"138px","top":"17px","left":"907px"},"silex-id-1551715345603-55":{"width":"298px","min-height":"169px","top":"242px","left":"140px"},"silex-id-1551715367020-56":{"width":"298px","min-height":"194px","top":"732px","left":"140px"},"silex-id-1551715426950-57":{"width":"298px","min-height":"188px","top":"475px","left":"140px"},"silex-id-1551715463787-58":{"width":"268px","min-height":"188px","top":"17px","left":"907px"},"silex-id-1551715559929-59":{"width":"1204px","background-color":"rgba(255,255,255,1)","min-height":"3910px","top":"15px","left":"100px"},"silex-id-1551715601834-61":{"width":"300px","min-height":"168px","top":"14px","left":"895px"},"silex-id-1551715613108-62":{"width":"257px","min-height":"60px","top":"18px","left":"25px"},"silex-id-1551715667840-63":{"width":"454px","min-height":"100px","top":"110px","left":"340px"},"silex-id-1551781064322-1":{"width":"920px","min-height":"512px","top":"3916px","left":"174px"},"silex-id-1551781894572-2":{"width":"931px","min-height":"415px","top":"1766px","left":"120px"},"silex-id-1551782005519-3":{"width":"1083px","min-height":"180px","top":"1106px","left":"77px"},"silex-id-1551782074662-4":{"width":"485px","min-height":"337px","top":"1330px","left":"318px"},"silex-id-1551782096186-5":{"width":"1083px","min-height":"52px","top":"1699px","left":"77px"},"silex-id-1551782209104-6":{"width":"1083px","min-height":"100px","top":"2153px","left":"77px"},"silex-id-1551782471765-7":{"width":"1083px","min-height":"263px","top":"2275px","left":"77px"},"silex-id-1551782523400-8":{"width":"368px","min-height":"60px","top":"2541px","left":"92px"},"silex-id-1551782707616-9":{"width":"1083px","min-height":"124px","top":"2571px","left":"77px"},"silex-id-1551782784949-10":{"width":"545px","min-height":"355px","top":"3114px","left":"343px"},"silex-id-1551820694112-1":{"width":"270px","background-color":"rgb(255, 255, 255)","min-height":"45px","top":"479px","left":"347px"},"silex-id-1551821112227-2":{"width":"900px","background-color":"rgb(255, 255, 255)","min-height":"500px","top":"507px","left":"159px"},"silex-id-1551828555744-1":{"width":"371px","background-color":"rgb(255, 255, 255)","min-height":"42px","top":"8497px","left":"64px"},"silex-id-1551865425277-0":{"width":"388px","min-height":"100px","top":"719px","left":"77px"},"silex-id-1551866184285-1":{"width":"347px","background-color":"rgb(255, 255, 255)","min-height":"36px","top":"1958px","left":"801px"},"silex-id-1551871513610-3":{"width":"905px","background-color":"rgb(255, 255, 255)","min-height":"504px","top":"3016px","left":"174px"},"silex-id-1551956324635-1":{"width":"271px","background-color":"rgb(255, 255, 255)","min-height":"44px","top":"826px","left":"339px"},"silex-id-1552034320375-1":{"width":"1195px","min-height":"385px","top":"22px","left":"-50px","background-color":"rgba(32,66,222,1)"},"silex-id-1552035091269-2":{"width":"665px","min-height":"376px","top":"4370px","left":"230px"},"silex-id-1552035578565-3":{"width":"1195px","background-color":"rgba(255,255,255,1)","min-height":"1004px","top":"15px","left":"100px"},"silex-id-1552035578570-4":{"background-color":"rgba(32,66,222,1)","min-width":"1195px"},"silex-id-1552035703235-6":{"width":"231px","min-height":"100px","top":"30px","left":"470px"},"silex-id-1552035752851-7":{"width":"1083px","min-height":"321px","top":"136px","left":"77px"},"silex-id-1552035797267-8":{"width":"1083px","min-height":"134px","top":"329px","left":"77px"},"silex-id-1552035879438-9":{"width":"1083px","min-height":"100px","top":"415px","left":"77px"},"silex-id-1552035930784-10":{"width":"1083px","min-height":"100px","top":"560px","left":"77px"},"silex-id-1552035985047-11":{"width":"1083px","min-height":"100px","top":"637px","left":"77px"},"silex-id-1552036171540-12":{"width":"333px","min-height":"195px","top":"269px","left":"58px"},"silex-id-1552036204658-13":{"width":"732px","min-height":"234px","top":"243px","left":"427px"},"silex-id-1552036729368-14":{"width":"1083px","min-height":"100px","top":"461px","left":"77px"},"silex-id-1552036819146-15":{"width":"708px","min-height":"334px","top":"777px","left":"221px"},"silex-id-1552036893953-16":{"width":"1083px","min-height":"122px","top":"1179px","left":"77px"},"silex-id-1552036964556-17":{"width":"424px","min-height":"350px","top":"1336px","left":"345px"},"silex-id-1552036982800-18":{"width":"","background-color":"","min-height":"365px"},"silex-id-1552037053063-20":{"width":"1083px","min-height":"100px","top":"1696px","left":"77px"},"silex-id-1552037127268-21":{"width":"476px","min-height":"335px","top":"1967px","left":"326px"},"silex-id-1552037417527-22":{"width":"1082px","min-height":"247px","top":"2333px","left":"77px"},"silex-id-1552037482281-23":{"width":"548px","min-height":"351px","top":"2555px","left":"315px"},"silex-id-1552037528921-24":{"width":"821px","min-height":"64px","top":"2907px","left":"224px"},"silex-id-1552037722889-25":{"width":"1083px","min-height":"223px","top":"2962px","left":"77px"},"silex-id-1552037791215-26":{"width":"776px","min-height":"438px","top":"3169px","left":"198px"},"silex-id-1552037816097-27":{"width":"1083px","min-height":"100px","top":"3642px","left":"77px"},"silex-id-1552037904003-28":{"width":"352px","min-height":"287px","top":"3807px","left":"380px"},"silex-id-1552037958102-29":{"width":"1195px","background-color":"rgb(255, 255, 255)","min-height":"282px","top":"4097px","left":"0px"},"silex-id-1552037972374-30":{"width":"1083px","min-height":"223px","top":"0px","left":"77px"},"silex-id-1552038068476-31":{"width":"575px","min-height":"65px","top":"190px","left":"147px"},"silex-id-1552038220195-32":{"width":"1083px","min-height":"410px","top":"4775px","left":"77px"},"silex-id-1552038306324-33":{"width":"660px","min-height":"360px","top":"5175px","left":"252px"},"silex-id-1552038340242-34":{"width":"1083px","min-height":"267px","top":"5554px","left":"77px"},"silex-id-1552038397813-35":{"width":"602px","min-height":"370px","top":"5784px","left":"282px"},"silex-id-1552038423488-36":{"width":"1083px","min-height":"227px","top":"6155px","left":"77px"},"silex-id-1552038486043-37":{"width":"671px","min-height":"458px","top":"6349px","left":"247px"},"silex-id-1552038685663-38":{"width":"1195px","background-color":"rgba(255,255,255,1)","min-height":"3982px","top":"15px","left":"100px"},"silex-id-1552038685668-39":{"min-width":"1195px","background-color":"rgba(32,66,222,1)"},"silex-id-1552038730215-40":{"width":"154px","min-height":"100px","top":"62px","left":"499px"},"silex-id-1552038818805-42":{"width":"236px","min-height":"380px","top":"27px","left":"906px"},"silex-id-1552039764336-43":{"width":"701px","min-height":"65px","top":"4816px","left":"260px"},"silex-id-1552039954412-44":{"width":"20px","min-height":"65px","top":"4818px","left":"236px"},"silex-id-1552051927594-46":{"width":"544px","min-height":"65px","top":"2293px","left":"297px"},"silex-id-1552051987347-47":{"width":"243px","min-height":"65px","top":"1101px","left":"442px"},"silex-id-1552052960806-48":{"width":"1083px","min-height":"297px","top":"2645px","left":"77px"},"silex-id-1552053006025-49":{"width":"1083px","min-height":"198px","top":"2825px","left":"77px"},"silex-id-1552053551403-50":{"width":"853px","min-height":"85px","top":"3014px","left":"235px"},"silex-id-1552053619306-51":{"width":"20px","min-height":"65px","top":"3032px","left":"208px"},"silex-id-1552053905375-52":{"width":"1083px","min-height":"382px","top":"3506px","left":"77px"},"silex-id-1552054991812-55":{"width":"1083px","min-height":"100px","top":"2226px","left":"77px"},"silex-id-1552055340664-56":{"width":"1083px","min-height":"100px","top":"2972px","left":"77px"},"silex-id-1552056272083-57":{"width":"1083px","min-height":"549px","top":"233px","left":"77px"},"silex-id-1552056799251-58":{"width":"1083px","min-height":"100px","top":"734px","left":"77px"},"silex-id-1552056965832-59":{"width":"1083px","min-height":"100px","top":"988px","left":"77px"},"silex-id-1552057078466-60":{"width":"1083px","min-height":"100px","top":"995px","left":"77px"},"silex-id-1552057136625-61":{"width":"503px","min-height":"359px","top":"1220px","left":"341px"},"silex-id-1552057155157-62":{"width":"857px","min-height":"100px","top":"1571px","left":"186px"},"silex-id-1552057486790-63":{"width":"1083px","min-height":"187px","top":"891px","left":"77px"},"silex-id-1552057739081-64":{"width":"1083px","min-height":"100px","top":"1595px","left":"77px"},"silex-id-1552057796533-65":{"width":"1083px","min-height":"100px","top":"1878px","left":"77px"},"silex-id-1552057853921-66":{"width":"1083px","min-height":"252px","top":"1989px","left":"77px"},"silex-id-1552057928786-67":{"width":"1083px","min-height":"100px","top":"2239px","left":"77px"},"silex-id-1552057977447-68":{"width":"1079px","min-height":"100px","top":"2178px","left":"91px"},"silex-id-1552058074033-69":{"width":"224px","background-color":"rgb(255, 255, 255)","min-height":"49px","top":"2196px","left":"308px"},"silex-id-1552058531654-70":{"width":"779px","min-height":"518px","top":"287px","left":"189px"},"silex-id-1552058579303-71":{"width":"430px","min-height":"415px","top":"1906px","left":"155px"},"silex-id-1552058623608-72":{"width":"327px","min-height":"472px","top":"1859px","left":"669px"},"silex-id-1552058653650-73":{"width":"694px","min-height":"437px","top":"2506px","left":"237px"},"silex-id-1552058782174-75":{"width":"836px","min-height":"637px","top":"6442px","left":"198px"},"silex-id-1552058832614-76":{"width":"744px","min-height":"457px","top":"5650px","left":"215px"},"silex-id-1552058861626-77":{"width":"637px","min-height":"685px","top":"4543px","left":"270px"},"silex-id-1552059135020-78":{"width":"292px","min-height":"65px","top":"2665px","left":"745px"},"silex-id-1552059580767-79":{"width":"59px","min-height":"51px","top":"23px","left":"199px"},"silex-id-1552059634464-80":{"width":"164px","background-color":"rgb(255, 255, 255)","min-height":"30px","top":"35px","left":"33px"},"silex-id-1552059703606-81":{"width":"263px","background-color":"rgb(255, 255, 255)","min-height":"84px","top":"8447px","left":"925px"},"silex-id-1552059750701-83":{"width":"59px","min-height":"51px","top":"23px","left":"199px"},"silex-id-1552059750704-84":{"width":"164px","background-color":"rgb(255, 255, 255)","min-height":"30px","top":"35px","left":"33px"},"silex-id-1552059750700-82":{"width":"263px","background-color":"rgb(255, 255, 255)","min-height":"84px","top":"7170px","left":"930px"},"silex-id-1552059878692-86":{"width":"59px","min-height":"51px","top":"26px","left":"5px"},"silex-id-1552059878694-87":{"width":"164px","background-color":"rgb(255, 255, 255)","min-height":"30px","top":"33px","left":"67px"},"silex-id-1552059878692-85":{"width":"263px","background-color":"rgb(255, 255, 255)","min-height":"84px","top":"5135px","left":"6px"},"silex-id-1552059897613-89":{"width":"59px","min-height":"51px","top":"23px","left":"199px"},"silex-id-1552059897616-90":{"width":"164px","background-color":"rgb(255, 255, 255)","min-height":"30px","top":"35px","left":"33px"},"silex-id-1552059897613-88":{"width":"263px","background-color":"rgb(255, 255, 255)","min-height":"84px","top":"3970px","left":"930px"},"silex-id-1552059916751-92":{"width":"59px","min-height":"51px","top":"2489px","left":"558px"},"silex-id-1552059916754-93":{"width":"164px","background-color":"rgb(255, 255, 255)","min-height":"30px","top":"2547px","left":"511px"},"silex-id-1552060862333-94":{"width":"44px","min-height":"49px","top":"2530px","left":"1143px"},"silex-id-1552060888110-95":{"width":"40px","min-height":"49px","top":"2532px","left":"16px"},"silex-id-1552060913361-96":{"width":"210px","background-color":"rgb(255, 255, 255)","min-height":"34px","top":"2542px","left":"67px"},"silex-id-1552060978214-97":{"width":"179px","background-color":"rgb(255, 255, 255)","min-height":"29px","top":"2543px","left":"963px"},"silex-id-1552061086214-99":{"width":"41px","min-height":"46px","top":"5166px","left":"1148px"},"silex-id-1552061113949-100":{"width":"187px","background-color":"rgb(255, 255, 255)","min-height":"29px","top":"5175px","left":"959px"},"silex-id-1552061185894-101":{"width":"44px","min-height":"46px","top":"4007px","left":"11px"},"silex-id-1552061200664-102":{"width":"191px","background-color":"rgb(255, 255, 255)","min-height":"29px","top":"4016px","left":"60px"},"silex-id-1552063469227-103":{"width":"183px","min-height":"69px","top":"245px","left":"108px"},"silex-id-1552063534457-104":{"width":"793px","min-height":"401px","top":"315px","left":"77px"},"silex-id-1552140443661-0":{"width":"166px","min-height":"69px","top":"1024px","left":"108px"},"silex-id-1552140485970-1":{"width":"789px","min-height":"482px","top":"1082px","left":"77px"},"silex-id-1552146082224-0":{"width":"960px","background-color":"rgba(255,255,255,1)","min-height":"1191px","top":"15px","left":"222px"},"silex-id-1552146117673-2":{"width":"499px","min-height":"380px","top":"564px","left":"315px"},"silex-id-1552146156268-3":{"width":"271px","background-color":"rgb(255, 255, 255)","min-height":"44px","top":"380px","left":"218px"},"silex-id-1552146860648-4":{"width":"100px","min-height":"60px","top":"20px","left":"379px"},"silex-id-1552146929971-5":{"width":"1108px","min-height":"100px","top":"287px","left":"67px"},"silex-id-1552147033012-6":{"width":"1112px","min-height":"100px","top":"430px","left":"65px"},"silex-id-1552147083107-7":{"width":"182px","min-height":"65px","top":"940px","left":"460px"},"silex-id-1552147235726-8":{"width":"1098px","min-height":"459px","top":"1010px","left":"72px"},"silex-id-1552147294509-9":{"width":"1098px","min-height":"100px","top":"1433px","left":"71px"},"silex-id-1552147902606-10":{"width":"1099px","min-height":"100px","top":"2438px","left":"74px"},"silex-id-1552148706128-14":{"width":"614px","min-height":"65px","top":"2667px","left":"136px"},"silex-id-1552148842720-15":{"width":"1104px","min-height":"189px","top":"2780px","left":"75px"},"silex-id-1552148916046-16":{"width":"1096px","min-height":"100px","top":"3563px","left":"83px"},"silex-id-1552148953563-17":{"width":"44px","min-height":"38px","top":"3860px","left":"15px"},"silex-id-1552148972631-18":{"width":"35px","min-height":"33px","top":"3862px","left":"1153px"},"silex-id-1552149023135-19":{"width":"165px","background-color":"rgb(255, 255, 255)","min-height":"38px","top":"3862px","left":"68px"},"silex-id-1552149073864-20":{"width":"256px","background-color":"rgb(255, 255, 255)","min-height":"29px","top":"3866px","left":"897px"},"silex-id-1552150636375-22":{"width":"87px","background-color":"rgb(255, 255, 255)","min-height":"84px","top":"37px","left":"706px"},"silex-id-1552156215802-0":{"width":"1195px","background-color":"rgba(255,255,255,1)","min-height":"3984px","top":"15px","left":"100px"},"silex-id-1552156215807-1":{"background-color":"rgba(32,66,222,1)","min-width":"1195px"},"silex-id-1552210463909-0":{"width":"300px","min-height":"168px","top":"17px","left":"892px"},"silex-id-1552210473900-1":{"width":"256px","min-height":"59px","top":"3px","left":"22px"},"silex-id-1552210519901-2":{"width":"441px","min-height":"82px","top":"100px","left":"391px"},"silex-id-1552210711065-3":{"width":"1083px","min-height":"129px","top":"213px","left":"77px"},"silex-id-1552210742353-4":{"width":"1083px","min-height":"149px","top":"293px","left":"77px"},"silex-id-1552210767792-5":{"width":"271px","background-color":"rgb(255, 255, 255)","min-height":"44px","top":"381px","left":"224px"},"silex-id-1552210888184-6":{"width":"1083px","min-height":"154px","top":"436px","left":"77px"},"silex-id-1552210924174-7":{"width":"499px","min-height":"380px","top":"568px","left":"359px"},"silex-id-1552210932537-8":{"width":"155px","min-height":"26px","top":"961px","left":"542px"},"silex-id-1552211022120-9":{"width":"1083px","min-height":"410px","top":"957px","left":"77px"},"silex-id-1552211081826-10":{"width":"1083px","min-height":"198px","top":"1719px","left":"77px"},"silex-id-1552211168502-11":{"width":"304px","background-color":"rgb(255, 255, 255)","min-height":"504px","top":"1946px","left":"447px"},"silex-id-1552211877494-12":{"width":"1083px","min-height":"100px","top":"2500px","left":"84px"},"silex-id-1552212033900-13":{"width":"469px","min-height":"65px","top":"2707px","left":"164px"},"silex-id-1552212197148-15":{"width":"288px","min-height":"65px","top":"2705px","left":"637px"},"silex-id-1552212300061-16":{"width":"1083px","min-height":"100px","top":"2832px","left":"77px"},"silex-id-1552212347276-17":{"width":"824px","background-color":"rgb(255, 255, 255)","min-height":"504px","top":"3113px","left":"198px"},"silex-id-1552212564765-18":{"width":"1083px","min-height":"100px","top":"3654px","left":"77px"},"silex-id-1552212638090-19":{"width":"37px","min-height":"39px","top":"3929px","left":"1138px"},"silex-id-1552212668879-20":{"width":"363px","background-color":"rgb(255, 255, 255)","min-height":"29px","top":"3938px","left":"764px"},"silex-id-1552215249224-21":{"width":"1083px","min-height":"100px","top":"1284px","left":"77px"},"silex-id-1552215386043-22":{"width":"194px","min-height":"199px","top":"1393px","left":"507px"},"silex-id-1552215488832-23":{"width":"1083px","min-height":"100px","top":"1605px","left":"77px"},"silex-id-1552215628920-24":{"width":"789px","min-height":"100px","top":"2109px","left":"77px"},"silex-id-1552215689077-25":{"width":"353px","min-height":"69px","top":"2060px","left":"108px"},"silex-id-1552222864687-0":{"width":"402px","min-height":"103px","top":"893px","left":"784px"},"silex-id-1552225483831-5":{"width":"322px","min-height":"588px","top":"40px","left":"75px"},"silex-id-1552225517068-6":{"width":"322px","min-height":"588px","top":"40px","left":"815px"}},"mobile":{},"prodotypeData":{"component":{},"style":{"all-style":{"className":"all-style","templateName":"text","displayName":"All style","styles":{"desktop":{"normal":{"className":"all-style","pseudoClass":"normal","All":{"font-family":"'Roboto', sans-serif"},"Paragraph":{"font-size":"20px"}}}}},"text-style-1":{"className":"text-style-1","templateName":"text","displayName":"Text Style 1","styles":{"desktop":{"normal":{"templateName":"text","className":"text-style-1","pseudoClass":"normal","All":{"font-size":""}}}}},"text-style-2":{"className":"text-style-2","templateName":"text","displayName":"Text Style 2","styles":{"desktop":{"normal":{"templateName":"text","className":"text-style-2","pseudoClass":"normal","Paragraph":{"font-size":"15px"}}}}}}}}]</script>
+
+    
+<style class="silex-prodotype-style" type="text/css" data-style-id="all-style">.text-element > .silex-element-content {font-family: 'Roboto', sans-serif;}p {font-size: 20px;}</style><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><style class="silex-prodotype-style" type="text/css" data-style-id="text-style-1"></style><style class="silex-prodotype-style" type="text/css" data-style-id="text-style-2">.text-style-2 p {font-size: 15px;}</style><!-- Silex HEAD tag do not remove --><!-- End of Silex HEAD tag do not remove --></head>
+
+<body data-silex-id="body-initial" class="body-initial all-style enable-mobile silex-runtime" data-silex-type="container">
+    <div class="silex-pages">
+        <div data-silex-type="image" class="editable-style silex-id-hamburger-menu image-element menu-button prevent-draggable hide-on-desktop" data-silex-id="silex-id-hamburger-menu">
+            <img alt="open mobile menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAB5UlEQVR42u2ZPWvCUBSGM+UfFO3e3dLu/QN+oKj4EUXRQREEJYgoiCAu6qCogyDo7iJ21UUaKqEgCC4iiEMGB3UVgsnpTWj/wfVK2nvhGbKEPJyT996TMMzPGg6H5mKx+GgkyuWyeTQasb8OTDwef4tEIp8+n+/LYIjJZJJHQiwzm81M6OLDarWqNpsNjEYgEJCy2ewT0+/3TagighElNFAnQT6ft1ARKkJFqMgfFvF4PFpuEwFtdrcRqVarIIoirFYrIiyXSxiPx+B2u/GJBINBuF6vQHopigK1Wg2fCMdxcLlciIuoqgqNRgOfiN1uB3Qwg91uB8fjkQiHwwEmkwne1qLxS0VuKKJle71eh06nQ4Rmswk8z+MVcTqdsNlsQJZlotF7Pp8hk8ngE4lGo/qN7xG/vV4Pb0Xm8zlxkdPpBGgMx/+yJxIJKBQKRMjlcuBwOGhq/Q+RcDgMsViMCFrAuFwu/CKDwQC22y1IkkSE/X4PgiDo+xc2Ea0S9zjGa/Hb7Xbxifj9fj0K7yFSqVTwtlY6nYbpdKpPiSRYLBbQarX0PYymFhWhIlSEilCRW6GdyUqlkoVZr9dsKpXiOY6TtW+7BkNBz/7ebrcf9L+6Xq+XRYPMMyrTq5EIhUIvaAjTJb4BBNQ2yhnth0wAAAAASUVORK5CYII=" class="silex-element-content">
+        </div>
+
+        <a id="page-accueil" data-silex-type="page" class="page-element" href="#!page-accueil">accueil</a><a id="page-l-audition" href="#!page-l-audition" data-silex-type="page" class="page-element">l'audition</a><a id="page-les-diff-rentes-parties-de-l-oreille" href="#!page-les-diff-rentes-parties-de-l-oreille" data-silex-type="page" class="page-element">Les différentes parties de l'oreille</a><a id="page-le-fonctionnement" href="#!page-le-fonctionnement" data-silex-type="page" class="page-element">Le fonctionnement</a><a id="page-le-son" href="#!page-le-son" data-silex-type="page" class="page-element">le son</a><a id="page-les-illusions-auditives" href="#!page-les-illusions-auditives" data-silex-type="page" class="page-element">les illusions auditives</a><a id="page-illusions-auditives-" href="#!page-illusions-auditives-" data-silex-type="page" class="page-element">illusions auditives ?</a><a id="page-diff-rentes-perceptions" href="#!page-diff-rentes-perceptions" data-silex-type="page" class="page-element">différentes perceptions</a><a id="page-le-paradoxe-de-triton" href="#!page-le-paradoxe-de-triton" data-silex-type="page" class="page-element">le paradoxe de triton</a><a id="page-les-mots-fant-mes" href="#!page-les-mots-fant-mes" data-silex-type="page" class="page-element">les mots fantômes</a><a id="page-yanny-laurel" href="#!page-yanny-laurel" data-silex-type="page" class="page-element">Yanny/Laurel</a><a id="page-conclusion" href="#!page-conclusion" data-silex-type="page" class="page-element">conclusion</a><a id="page-sources" href="#!page-sources" data-silex-type="page" class="page-element">SOURCES</a></div>
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1478366444112-1 section-element" data-silex-id="silex-id-1478366444112-1" style="">
+        <div data-silex-type="container" class="editable-style silex-element-content silex-id-1478366444112-0 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1478366444112-0"><div data-silex-type="image" class="editable-style silex-id-1552034320375-1 image-element" data-silex-id="silex-id-1552034320375-1"><img src="banni%C3%A8re.jpg" class="silex-element-content"></div></div>
+    </div>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1551197838734-4 section-element" data-silex-id="silex-id-1551197838734-4"><div data-silex-type="container" class="editable-style silex-id-1551197838730-3 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1551197838730-3"></div>﻿﻿﻿﻿<div data-silex-type="container" class="editable-style silex-id-1551258188927-3 container-element" data-silex-id="silex-id-1551258188927-3"><div data-silex-type="text" class="editable-style silex-id-1551198299819-11 text-element" data-silex-id="silex-id-1551198299819-11" data-silex-href="#!page-sources"><div class="silex-element-content normal"><h3>SOURCES<br></h3></div></div><div data-silex-type="text" class="editable-style silex-id-1551198242938-10 text-element" data-silex-id="silex-id-1551198242938-10" data-silex-href="#!page-conclusion"><div class="silex-element-content normal"><h3>CONCLUSION<br></h3></div></div><div data-silex-type="text" class="editable-style silex-id-1551198178397-9 text-element" data-silex-id="silex-id-1551198178397-9" data-silex-href="#!page-les-illusions-auditives"><div class="silex-element-content normal"><h3>LES ILLUSIONS AUDITIVES<br></h3></div></div><div data-silex-type="text" class="editable-style silex-id-1551197975682-7 text-element" data-silex-id="silex-id-1551197975682-7" data-silex-href="#!page-l-audition"><div class="silex-element-content normal"><h3>L'AUDITION<br></h3></div></div><div data-silex-type="text" class="editable-style silex-id-1551197896370-6 text-element" data-silex-id="silex-id-1551197896370-6" data-silex-href="#!page-accueil"><div class="silex-element-content normal"><h3>ACCUEIL<br></h3></div>﻿</div><div data-silex-type="text" class="editable-style silex-id-1552146860648-4 text-element" data-silex-id="silex-id-1552146860648-4" data-silex-href="#!page-le-son"><div class="silex-element-content normal"><h3>LE SON<br></h3></div></div></div>﻿</div><div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1474394621033-3 section-element page-accueil paged-element" data-silex-id="silex-id-1474394621033-3" style="">
+        <div data-silex-type="container" class="editable-style silex-element-content silex-id-1474394621032-2 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1474394621032-2"><div data-silex-type="text" class="editable-style silex-id-1551257998957-1 text-element" data-silex-id="silex-id-1551257998957-1"><div class="silex-element-content normal"><p>Le plus souvent, quand on parle d’illusion sensorielle, on l’assimile directement aux illusions d’optique. Cependant, d’autres types d’illusions peuvent exister, comme les illusions auditives. Une illusion est engendrée le plus souvent par l’intervention de notre cerveau qui interprète de façon erronée une donnée sensorielle depuis nos organes visuels, auditifs, ou autres. Contrairement aux illusions d’optique, l’étude de ces illusions auditives s’est développée beaucoup plus tard grâce à la maîtrise de l’électroacoustique et du traitement des sons par ordinateur. Il a donc fallu attendre la deuxième moitié du XXème siècle pour pouvoir mieux les comprendre.Nous nous sommes intéressées plus particulièrement au travail d’une professeure en psychologie, Diana Deutsch, qui a créé plusieurs illusions auditives.<br></p></div></div><div data-silex-type="image" class="editable-style silex-id-1552225483831-5 image-element" data-silex-id="silex-id-1552225483831-5"><img src="Oreille%20accueil%20droite.png" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1552225517068-6 image-element" data-silex-id="silex-id-1552225517068-6"><img src="Oreille%20accueil%20gauche.png" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1551258081740-2 text-element" data-silex-id="silex-id-1551258081740-2"><div class="silex-element-content normal"><h3>Nous avons tenté de répondre à la question : pourquoi notre cerveau perçoit-il les illusions auditives différemment ?<br></h3></div></div></div>
+    </div><div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1551258868910-5 section-element page-l-audition paged-element" data-silex-id="silex-id-1551258868910-5"><div data-silex-type="container" class="editable-style silex-id-1551258868907-4 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1551258868907-4"><div data-silex-type="text" class="editable-style silex-id-1551259589894-6 text-element page-l-audition paged-element" data-silex-id="silex-id-1551259589894-6"><div class="silex-element-content normal"><h1>LE MÉCANISME DE L'AUDITION<br></h1></div></div><div data-silex-type="container" class="editable-style silex-id-1551261918326-20 container-element page-l-audition paged-element" data-silex-id="silex-id-1551261918326-20"><div data-silex-type="text" class="editable-style silex-id-1551259819453-8 text-element" data-silex-id="silex-id-1551259819453-8" data-silex-href="#!page-le-fonctionnement"><div class="silex-element-content normal"><h3>2) Le fonctionnement de l'audition<br></h3></div></div><div data-silex-type="text" class="editable-style silex-id-1551259734283-7 text-element" data-silex-id="silex-id-1551259734283-7" data-silex-href="#!page-les-diff-rentes-parties-de-l-oreille"><div class="silex-element-content normal"><h3>1) Les différentes parties de l'oreille<br></h3></div></div></div><div data-silex-type="image" class="editable-style silex-id-1551266656096-74 image-element page-l-audition paged-element" data-silex-id="silex-id-1551266656096-74"><img src="image3D.jpg" class="silex-element-content"></div></div></div><div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1551260374706-10 section-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551260374706-10"><div data-silex-type="container" class="editable-style silex-id-1551260374704-9 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1551260374704-9"><div data-silex-type="text" class="editable-style silex-id-1551260704551-13 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551260704551-13"><div class="silex-element-content normal"><h3><u>L'OREILLE EXTERNE</u><br></h3></div></div><div data-silex-type="text" class="editable-style silex-id-1551266812911-78 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551266812911-78" data-silex-href="#!page-l-audition"><div class="silex-element-content normal"><h3>L'AUDITION<br></h3></div></div><div data-silex-type="image" class="editable-style silex-id-1551715280795-53 image-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551715280795-53"><img src="professeur-tournesol.jpg" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1551260416965-11 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551260416965-11"><div class="silex-element-content normal"><h1>LE FONCTIONNEMENT DE L'AUDITION<br></h1></div>﻿﻿﻿</div><div data-silex-type="image" class="editable-style silex-id-1551266314770-73 image-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551266314770-73" data-silex-href="#!page-les-diff-rentes-parties-de-l-oreille"><img src="fl%C3%A8che.jpg" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1551266107761-71 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551266107761-71"><div class="silex-element-content normal"><p><br></p><p>La sélection des
+informations à traiter en priorité est réalisée par la voie
+auditive non primaire, regroupant tous les messages sensoriels
+envoyés au cerveau en même temps. Cette voie est rattachée aux
+centres de la vie végétative, d’éveil et de motivation.
+L’attention se fixe donc sur l’information la plus intéressante
+et/ou importante grâce à ce système.</p>
+<p>L’oreille humaine
+capte les ondes d’une fréquence de 20Hz à 20 000Hz environ.</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551265962108-70 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551265962108-70"><div class="silex-element-content normal"><p><i>﻿<u>﻿Schéma 12 : schéma du parcours de l'information auditive dans le cerveau, voie non primaire</u></i><br></p></div></div><div data-silex-type="image" class="editable-style silex-id-1551265938870-69 image-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551265938870-69"><img src="sch%C3%A9ma12.jpg" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1551265787221-68 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551265787221-68"><div class="silex-element-content normal"><br><p><u>Voie auditive non
+primaire :</u></p>
+<p>La voie auditive non
+primaire a d’autres relais, non spécifiques à l’audition. Le
+premier relais est commun aux deux voies auditives, se sont les
+noyaux cochléaires. Les autres relais sont détaillés dans le
+schéma ci-dessous (schéma n°12).</p>
+
+</div></div><div data-silex-type="text" class="editable-style silex-id-1551265563544-67 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551265563544-67"><div class="silex-element-content normal"><p>* La tonotopie est la projection sur le cortex de l'échelle tonale, se ramenant à une projection étalée des récepteurs cochléaires de la membrane basilaire, Henri Piéron, 1973.<br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551265337323-65 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551265337323-65"><div class="silex-element-content normal"><p><u>﻿<i>﻿Schéma 11 : schéma du parcours de l'information auditive dans le cerveau</i></u><br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551265045321-61 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551265045321-61"><div class="silex-element-content normal"><p><u>﻿<i>﻿Schéma 10 : schéma d'un neurone</i></u><br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551265142124-63 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551265142124-63"><div class="silex-element-content normal"><p><br></p><p>Au niveau des noyaux
+cochléaires, la durée, l’intensité et la fréquence du message
+sont décodées. Le deuxième élément du tronc cérébral est le
+complexe olivaire supérieur. Il analyse et filtre le signal nerveux
+aboutissant au cortex cérébral. Il a également une fonction
+importante pour localiser la source sonore, rôle partagé notamment
+avec le colliculus inférieur, troisième relai.  Un troisième
+neurone monte le message jusqu’à celui-ci. Les colliculi (pluriel
+de colliculus) sont situés dans l’encéphale, partie supérieure
+du tronc cérébral. L’homme en compte quatre dont 2 inférieurs.
+Le dernier élément avant le cortex cérébral est le corps
+genouillé médian (ou thalamus). Son rôle est d’assimiler
+l’information et d’élaborer une réponse motrice, vocale par
+exemple. Enfin, le cortex auditif est relié au thalamus par un
+neurone, le dernier de la voie auditive. Le cortex reconnait le
+message, l’enregistre, et l’intègre dans une réponse
+volontaire.</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551264787071-58 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551264787071-58"><div class="silex-element-content normal"><p><u>﻿<i>﻿Schéma 9 : schéma du cerveau et de ses différentes parties</i></u><br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551264700925-56 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551264700925-56"><div class="silex-element-content normal"><br><p>Le cerveau est l’organe de contrôle du corps
+humain. Il est composé de plusieurs parties (voir schéma n°9) :
+l’encéphale, qui contrôle les comportements volontaires ; le
+cortex cérébral, qui contient lui-même plusieurs lobes. Ces lobes
+ont différentes fonctions propres à chacun : le lobe frontal permet
+l’initiation et la coordination des mouvements ; le lobe pariétal
+intervient dans les processus sensoriels, le langage et l’attention
+; le lobe occipital aide à la reconnaissance des formes et des
+couleurs. Il intervient donc dans le traitement de l’information
+visuelle. Enfin, le lobe temporal traite les informations auditives
+et intègre les autres informations sensorielles. Toutes ces parties
+forment le cerveau antérieur, également composé des ganglions de
+la base ; du thalamus et de l’hypothalamus, qui interviennent dans
+la coordination des mouvements et les comportements liés à la
+récompense. Le mésencéphale, autre partie du cerveau, sert
+principalement aux réflexes auditifs et visuels ainsi qu’aux
+mécanismes de récompense et à l’humeur. Le rhombencéphale,
+composé du bulbe rachidien et du pont, permet le contrôle du niveau
+de glucose dans le sang, du rythme respiratoire, et de l’activité
+cardiaque. Le cervelet joue un rôle dans le contrôle des mouvements
+et dans des processus cognitifs. Et enfin la moelle épinière,
+présente tout le long de notre colonne vertébrale, « met en place
+» toutes les informations données par les autres parties et génère
+tous les mouvements et réponses aux informations. Le cerveau est
+également séparé en deux hémisphères : l’hémisphère droit,
+qui contrôle le côté gauche du corps ; et l’hémisphère gauche,
+qui contrôle le côté droit du corps.</p>
+
+<br></div></div><div data-silex-type="text" class="editable-style silex-id-1551264612572-55 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551264612572-55"><div class="silex-element-content normal"><h3><u>﻿LE CERVEAU</u><br></h3></div></div><div data-silex-type="text" class="editable-style silex-id-1551264345920-53 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551264345920-53"><div class="silex-element-content normal"><p><u>﻿<i>﻿Schéma 8 : schéma de la distribution des fréquences le long de la membrane basilaire d'une cochlée humaine</i></u><br></p></div></div><div data-silex-type="image" class="editable-style silex-id-1551264306206-52 image-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551264306206-52"><img src="sch%C3%A9ma8.jpg" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1551261533703-19 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551261533703-19"><div class="silex-element-content normal"><p><br></p><p>L’organe de corti
+(schémas n°5, 6 et 7), situé entre le canal cochléaire et la
+rampe tympanique (1 sur les schémas n°6 et 7), est l’organe de la
+perception auditive. Il est composé des cellules ciliées qui sont
+des cellules sensorielles.</p>
+<p>Lorsque
+l’information est transmise à l’oreille interne, l’onde de
+pression déforme la membrane basilaire à un endroit correspondant à
+une fréquence. Les cellules ciliées situées à l’apex de la
+cochlée codent l'information relative aux fréquences graves et les
+cellules ciliées situées à la base codent l'information relative
+aux fréquences aiguës : c’est la tonotopie cochléaire (schéma
+8)</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551264093759-51 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551264093759-51"><div class="silex-element-content normal"><p><u>﻿<i>﻿Schéma 7 : photo d'une coupe transversale du 3ème tour d'une cochlée de cobaye (50 <b>μm</b>)</i></u><br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551263991098-49 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551263991098-49"><div class="silex-element-content normal"><p><u>﻿<i>﻿Schéma 5 et 6 : schéma de coupes transversales du canal cochléaire</i></u><br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551261104836-18 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551261104836-18"><div class="silex-element-content normal"><p><br></p><p>En entrant dans la
+cochlée, les ondes sonores passent du milieu aérien au milieu
+liquide. En effet, cette cavité osseuse en forme d’escargot est
+pleine de liquide et transforme les vibrations mécaniques en signaux
+nerveux. Elle est placée dans l’os temporal. La cochlée est
+composée de trois canalicules qui sont (voir schéma n°4) : le
+canal cochléaire (1), la rampe vestibulaire (2), la rampe tympanique
+(3). Ces canalicules sont enroulés autour du modiolus, axe osseux.
+Les deux rampes sont reliées par l’hélicotrème, petit orifice
+localisé à l’apex (sommet) de la cochlée. Le canal cochléaire
+contient de l’endolymphe, fluide de la cochlée. Les rampes
+vestibulaire et tympanique contiennent de la périlymphe, également
+un fluide de la cochlée. Le ganglion cochléaire (4) et le nerf
+auditif (5) sont des corps nerveux situés dans l’axe modiolaire. </p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551263799089-46 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551263799089-46"><div class="silex-element-content normal"><p><i>﻿<u>﻿Schéma 4: schéma d'une coupe transversale de la cochlée</u></i><br></p></div></div><div data-silex-type="image" class="editable-style silex-id-1551263727524-44 image-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551263727524-44"><img src="sch%C3%A9ma4-1.jpg" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1551263786258-45 image-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551263786258-45"><img src="sch%C3%A9ma4-2.png" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1551261053515-17 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551261053515-17"><div class="silex-element-content normal"><h3><u>L'OREILLE INTERNE</u><br></h3></div></div><div data-silex-type="text" class="editable-style silex-id-1551260965930-16 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551260965930-16"><div class="silex-element-content normal"><p><br></p><p>Les sons font alors vibrer le tympan, membrane séparant l’oreille
+externe et l’oreille moyenne. Il convertit l’énergie acoustique
+en énergie mécanique (vibrations). Ces dernières sont ensuite
+amplifiées par les osselets et se propagent jusqu’à la cochlée,
+organe récepteur de l’audition, grâce à l’étrier, osselet
+directement relié à la paroi molle de celle-ci (fenêtre
+cochléaire). A partir de 80 décibels (son fort), un réflexe
+protecteur, appelé réflexe stapédien ou acoustique, est établi
+pour atténuer l’intensité des sons transmis à l’oreille
+interne pour ne pas l’endommager. Il se caractérise, par la
+contraction de deux muscles de l’oreille moyenne : le muscle du
+marteau et le muscle stapédien. Chez l’homme, contrairement aux
+animaux, seul le muscle stapédien se contracte. Cette contraction
+rend plus rigide la chaîne des osselets et évite donc la platine
+(partie plate de l’étrier) de trop s’enfoncer dans l’oreille
+interne (cochlée). Elle est involontaire (réflexe) et bilatérale :
+en effet, même si le son n’est transmis qu’à une seule oreille,
+les muscles des deux oreilles se contractent.</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551260767808-14 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551260767808-14"><div class="silex-element-content normal"><br><p>Les ondes sonores du milieu aérien entrent dans le
+pavillon, composé uniquement de cartilage aidant à mieux capter et
+amplifier les sons. Ces ondes se propagent ensuite dans le canal
+auditif, long d’environ 2,5cm et qui amplifie les fréquences
+aiguës (plus de 3000Hz). 
+</p>
+
+<br></div></div><div data-silex-type="text" class="editable-style silex-id-1551260930580-15 text-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551260930580-15"><div class="silex-element-content normal"><h3><u>L'OREILLE MOYENNE</u><br></h3></div></div><div data-silex-type="html" class="editable-style silex-id-1551828555744-1 html-element page-le-fonctionnement paged-element" data-silex-id="silex-id-1551828555744-1" data-silex-href="#!page-les-diff-rentes-parties-de-l-oreille"><div class="silex-element-content"><button id="MyBtn" onclick="topFunction()" title="LES DIFFÉRENTES PARTIES DE L'OREILLE" style="display: block;">LES DIFFÉRENTES PARTIES DE L'OREILLE</button></div></div><div data-silex-type="image" class="editable-style silex-id-1552058579303-71 image-element" data-silex-id="silex-id-1552058579303-71"><img src="Vraisch%C3%A9ma5.jpg" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1552058623608-72 image-element" data-silex-id="silex-id-1552058623608-72"><img src="Vraisch%C3%A9ma6.jpg" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1552058653650-73 image-element" data-silex-id="silex-id-1552058653650-73"><img src="Vraisch%C3%A9ma7.jpg" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1552058782174-75 image-element" data-silex-id="silex-id-1552058782174-75"><img src="Vraisch%C3%A9ma11.jpg" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1551265529914-66 image-element" data-silex-id="silex-id-1551265529914-66"><img src="asterisk.JPG" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1552058832614-76 image-element" data-silex-id="silex-id-1552058832614-76"><img src="Vraisch%C3%A9ma10.png" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1552058861626-77 image-element" data-silex-id="silex-id-1552058861626-77"><img src="Vraisch%C3%A9ma9.jpg" class="silex-element-content"></div><div data-silex-type="container" class="editable-style silex-id-1552059703606-81 container-element" data-silex-id="silex-id-1552059703606-81"><div data-silex-type="image" class="editable-style silex-id-1552059580767-79 image-element" data-silex-id="silex-id-1552059580767-79"><img src="fl%C3%A8che-vers-le-haut.jpg" class="silex-element-content"></div><div data-silex-type="html" class="editable-style silex-id-1552059634464-80 html-element" data-silex-id="silex-id-1552059634464-80"><div class="silex-element-content"><button id="MyBtn" onclick="topFunction()" title="Haut de la page" style="display: block;">Haut de la page</button></div></div></div><div data-silex-type="text" class="editable-style silex-id-1551264941508-59 text-element" data-silex-id="silex-id-1551264941508-59"><div class="silex-element-content normal"><br><p>Comme tout sens,
+l’audition détient dans le cerveau une voie et des centres
+primaires (uniquement pour ce sens) et des voies non primaires,
+faites pour tous les sens. &nbsp; </p>
+<p><br>
+
+</p>
+
+	<p><u>Voie auditive
+	primaire :</u></p>
+
+<p>Les messages codés
+par la cochlée se dirigent ensuite vers le nerf auditif qui les
+transmet au cortex cérébral, dans le cerveau, à travers plusieurs
+relais (voir schéma n°11). Le premier élément de la voie auditive
+primaire est les noyaux cochléaires du bulbe rachidien, bas du tronc
+cérébral. Ces noyaux reçoivent les axones des neurones de type I
+du nerf auditif. L’axone est le prolongement du neurone conduisant
+le message électrique d’un corps cellulaire aux synapses (voir
+schéma n°10).</p>
+
+</div></div><div data-silex-type="text" class="editable-style silex-id-1551262496892-21 text-element" data-silex-id="silex-id-1551262496892-21"><div class="silex-element-content normal"><br><p>Les fluides de la cochlée se mettent alors en mouvement ainsi que
+les cellules ciliées situées dans la membrane basilaire de la
+cochlée. Ces cellules transforment les vibrations en messages
+électriques. 
+</p>
+
+<br></div></div></div></div><div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1551266697215-76 section-element page-les-diff-rentes-parties-de-l-oreille paged-element" data-silex-id="silex-id-1551266697215-76"><div data-silex-type="container" class="editable-style silex-id-1551266697213-75 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1551266697213-75"><div data-silex-type="text" class="editable-style silex-id-1551266745818-77 text-element page-les-diff-rentes-parties-de-l-oreille paged-element" data-silex-id="silex-id-1551266745818-77" data-silex-href="#!page-l-audition"><div class="silex-element-content normal"><h3>L'AUDITION<br></h3></div>﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿</div><div data-silex-type="text" class="editable-style silex-id-1551267105385-82 text-element page-les-diff-rentes-parties-de-l-oreille paged-element" data-silex-id="silex-id-1551267105385-82"><div class="silex-element-content normal"><p><i>﻿<u>﻿Schéma 1 : schéma de l'oreille</u></i><br></p></div>﻿﻿</div><div data-silex-type="text" class="editable-style silex-id-1551267194085-83 text-element page-les-diff-rentes-parties-de-l-oreille paged-element" data-silex-id="silex-id-1551267194085-83"><div class="silex-element-content normal"><br><p>L’oreille peut être divisée en 3 parties (voir schéma n°1) :
+l’oreille externe, l’oreille moyenne et l’oreille interne.</p>
+<p>L’oreille externe est composée du pavillon et du canal auditif.</p>
+<p>L'oreille moyenne comprend le tympan, les osselets (le marteau,
+l'enclume et l'étrier), ainsi que la fenêtre cochléaire constituée
+de la fenêtre ovale et de la fenêtre ronde.</p>
+<p>L'oreille moyenne communique avec les fosses nasales via la trompe
+d'Eustache.</p>
+<p>L'oreille interne (voir schéma n°2 et 3), enfin, contient la
+cochlée ainsi que le vestibulaire (ou vestibule), organe de
+l’équilibre. Le vestibulaire ne contribue pas à l’audition. Le
+nerf auditif transmet l'information sonore au cerveau.</p>
+
+<br></div></div><div data-silex-type="text" class="editable-style silex-id-1551267438668-88 text-element page-les-diff-rentes-parties-de-l-oreille paged-element" data-silex-id="silex-id-1551267438668-88"><div class="silex-element-content normal"><p>(la cochlée est en doré)<br></p></div>﻿</div><div data-silex-type="image" class="editable-style silex-id-1551267242577-84 image-element page-les-diff-rentes-parties-de-l-oreille paged-element" data-silex-id="silex-id-1551267242577-84"><img src="sch%C3%A9ma2.jpg" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1551267264788-85 text-element" data-silex-id="silex-id-1551267264788-85"><div class="silex-element-content normal"><p><u>﻿<i>﻿Schéma 2 : schéma des différentes parties de l'oreille interne</i></u><br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551267373295-87 text-element page-les-diff-rentes-parties-de-l-oreille paged-element" data-silex-id="silex-id-1551267373295-87"><div class="silex-element-content normal"><p><u><i>Schéma 3 : schéma de l'oreille interne</i></u><br></p></div></div><div data-silex-type="image" class="editable-style silex-id-1551267333328-86 image-element page-les-diff-rentes-parties-de-l-oreille paged-element" data-silex-id="silex-id-1551267333328-86"><img src="sch%C3%A9ma3.jpg" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1551267516057-89 image-element page-les-diff-rentes-parties-de-l-oreille paged-element" data-silex-id="silex-id-1551267516057-89" data-silex-href="#!page-le-fonctionnement"><img src="fl%C3%A8che2.jpeg" class="silex-element-content"></div><div data-silex-type="html" class="editable-style silex-id-1551866184285-1 html-element page-les-diff-rentes-parties-de-l-oreille paged-element" data-silex-id="silex-id-1551866184285-1" data-silex-href="#!page-le-fonctionnement"><div class="silex-element-content"><button id="MyBtn" onclick="topFunction()" title="LE FONCTIONNEMENT DE L'AUDITION" style="display: block;">LE FONCTIONNEMENT DE L'AUDITION</button></div></div><div data-silex-type="image" class="editable-style silex-id-1552058531654-70 image-element" data-silex-id="silex-id-1552058531654-70"><img src="VraiSch%C3%A9ma1.jpg" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1551266940892-80 text-element" data-silex-id="silex-id-1551266940892-80"><div class="silex-element-content normal"><h1>LES DIFFÉRENTES PARTIES DE L'OREILLE<br></h1></div></div><div data-silex-type="image" class="editable-style silex-id-1551715249045-52 image-element" data-silex-id="silex-id-1551715249045-52"><img src="professeur-tournesol.jpg" class="silex-element-content"></div></div></div><div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1551430602560-1 section-element page-les-illusions-auditives paged-element" data-silex-id="silex-id-1551430602560-1"><div data-silex-type="container" class="editable-style silex-id-1551430602557-0 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1551430602557-0"><div data-silex-type="container" class="editable-style silex-id-1551430633731-2 container-element page-les-illusions-auditives paged-element" data-silex-id="silex-id-1551430633731-2"><div data-silex-type="text" class="editable-style silex-id-1551710678640-34 text-element" data-silex-id="silex-id-1551710678640-34" data-silex-href="#!page-illusions-auditives-"><div class="silex-element-content normal"><h3>I) Les illusions auditives ?<br></h3></div></div><div data-silex-type="text" class="editable-style silex-id-1551710550623-33 text-element" data-silex-id="silex-id-1551710550623-33" data-silex-href="#!page-diff-rentes-perceptions"><div class="silex-element-content normal"><h3>II) Les différentes perceptions des illusions auditives<br></h3></div>﻿</div><div data-silex-type="text" class="editable-style silex-id-1551430659235-3 text-element" data-silex-id="silex-id-1551430659235-3" data-silex-href="#!page-le-paradoxe-de-triton"><div class="silex-element-content normal"><h3>1) Le paradoxe de Triton<br></h3></div>﻿</div><div data-silex-type="text" class="editable-style silex-id-1551430900553-4 text-element" data-silex-id="silex-id-1551430900553-4" data-silex-href="#!page-les-mots-fant-mes"><div class="silex-element-content normal"><h3>2) Les mots fantômes<br></h3></div></div><div data-silex-type="text" class="editable-style silex-id-1551430961793-5 text-element" data-silex-id="silex-id-1551430961793-5" data-silex-href="#!page-yanny-laurel"><div class="silex-element-content normal"><h3>3) Yanny ou Laurel<br></h3></div></div></div><div data-silex-type="text" class="editable-style silex-id-1551431122455-6 text-element page-les-illusions-auditives paged-element" data-silex-id="silex-id-1551431122455-6"><div class="silex-element-content normal"><h1>LES ILLUSIONS AUDITIVES<br></h1></div></div><div data-silex-type="image" class="editable-style silex-id-1551714920181-49 image-element page-les-illusions-auditives paged-element" data-silex-id="silex-id-1551714920181-49"><img src="can-you-trust-your-ears.jpg" class="silex-element-content"></div></div></div><div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1551431363291-8 section-element page-yanny-laurel paged-element" data-silex-id="silex-id-1551431363291-8"><div data-silex-type="container" class="editable-style silex-id-1551431363288-7 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1551431363288-7"><div data-silex-type="text" class="editable-style silex-id-1551431474886-10 text-element page-yanny-laurel paged-element" data-silex-id="silex-id-1551431474886-10"><div class="silex-element-content normal"><h1>YANNY OU LAUREL<br></h1></div></div><div data-silex-type="text" class="editable-style silex-id-1551431398719-9 text-element" data-silex-id="silex-id-1551431398719-9" data-silex-href="#!page-les-illusions-auditives"><div class="silex-element-content normal"><h3>LES ILLUSIONS AUDITIVES<br></h3></div></div><div data-silex-type="text" class="editable-style silex-id-1551435252245-36 text-element page-yanny-laurel paged-element" data-silex-id="silex-id-1551435252245-36"><div class="silex-element-content normal"><ul><li><h3><u>A) QU'EST CE QUE YANNY OU LAUREL ?</u><br></h3></li></ul></div></div><div data-silex-type="image" class="editable-style silex-id-1551714843001-47 image-element page-yanny-laurel paged-element" data-silex-id="silex-id-1551714843001-47"><img src="yanny-laurel.jpg" class="silex-element-content"></div><div data-silex-type="html" class="editable-style silex-id-1551821112227-2 html-element page-yanny-laurel paged-element" data-silex-id="silex-id-1551821112227-2"><div class="silex-element-content"><video controls="controls" width="900" height="500">
+    <source src="wivm7423.mp4" type="video/mp4">
+    Votre navigateur n'est pas compatible
+</video></div></div><div data-silex-type="text" class="editable-style silex-id-1551712592626-46 text-element page-yanny-laurel paged-element" data-silex-id="silex-id-1551712592626-46"><div class="silex-element-content normal"><ul><li><h3>B) <u>YANNY OU LAUREL ?</u><br></h3></li></ul></div></div><div data-silex-type="image" class="editable-style silex-id-1551782074662-4 image-element page-yanny-laurel paged-element" data-silex-id="silex-id-1551782074662-4"><img src="Yanny-Laurel-sondage.jpg" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1551781894572-2 image-element page-yanny-laurel paged-element" data-silex-id="silex-id-1551781894572-2"><img src="tableau-yanny-laurel.png" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1551782096186-5 text-element page-yanny-laurel paged-element" data-silex-id="silex-id-1551782096186-5"><div class="silex-element-content normal"><p>Nous avons classé les résultats sous forme de tableau :<br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551712332469-45 text-element page-yanny-laurel paged-element" data-silex-id="silex-id-1551712332469-45"><div class="silex-element-content normal"><br><p>Yanny ou Laurel est un enregistrement d’une illusion auditive
+apparue sur les réseaux sociaux en 2018 lorsqu’une adolescente
+découvre qu’elle entend « Yanny » après avoir lancé la
+prononciation « Laurel ». Elle lance alors sur ces réseaux un
+sondage pour savoir ce que plusieurs individus percevaient. Nous
+avons nous-même réalisé ce sondage afin d’en apprendre un peu
+plus. &nbsp;</p>
+
+</div></div><div data-silex-type="text" class="editable-style silex-id-1551782209104-6 text-element" data-silex-id="silex-id-1551782209104-6"><div class="silex-element-content normal"><br><p>Nous constatons que pour une tranche d'âge entre 14
+et 26 ans, <b>72%</b> ( (103+44)/204*100 ) des personnes  entendent
+"Yanny" environ contre presque <b>27%</b> (
+(37+20)/204*100 ) de personnes entendant "Laurel"</p>
+
+</div></div><div data-silex-type="text" class="editable-style silex-id-1552054991812-55 text-element" data-silex-id="silex-id-1552054991812-55"><div class="silex-element-content normal"><p>Dans l'intervalle de 26 à 50 ans, presque<b>﻿ 95%</b>﻿ des personnes interrogées perçoivent "Yanny" contre un peu plus de <b>﻿5% </b>﻿entendant "Laurel".<br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551782707616-9 text-element" data-silex-id="silex-id-1551782707616-9"><div class="silex-element-content normal"><p><br></p><p>L’enregistrement
+Yanny ou Laurel comprend une explication scientifique. </p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552053006025-49 text-element" data-silex-id="silex-id-1552053006025-49"><div class="silex-element-content normal"><p><br></p><p>Cependant
+l’enregistrement de base ne porte qu’une seule et même fréquence
+: Laurel. Il est possible d'apporter quelques modifications à cette
+fréquence, c'est à dire l'élever ou la baisser afin d'entendre les
+2 prénoms. La perception de ces prénoms est donc subjective.</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552055340664-56 text-element" data-silex-id="silex-id-1552055340664-56"><div class="silex-element-content normal"><p>Ci-dessous voici le lien d'un article d'une rubrique du "New York Times"&nbsp; où l'on trouve un outil permettant de faire varier la fréquence du son et donnant la possibilité à chaque personne d'entendre les deux prénoms.<br></p></div></div><div data-silex-type="container" class="editable-style container-element silex-id-1552059897613-88" data-silex-id="silex-id-1552059897613-88"><div data-silex-type="image" class="editable-style image-element silex-id-1552059897613-89" data-silex-id="silex-id-1552059897613-89"><img src="fl%C3%A8che-vers-le-haut.jpg" class="silex-element-content"></div><div data-silex-type="html" class="editable-style html-element silex-id-1552059897616-90" data-silex-id="silex-id-1552059897616-90"><div class="silex-element-content"><button id="MyBtn" onclick="topFunction()" title="Haut de la page" style="display: block;">Haut de la page</button></div></div></div><div data-silex-type="image" class="editable-style silex-id-1552061185894-101 image-element" data-silex-id="silex-id-1552061185894-101"><img src="fl%C3%A8che.jpg" class="silex-element-content"></div><div data-silex-type="html" class="editable-style silex-id-1552061200664-102 html-element" data-silex-id="silex-id-1552061200664-102" data-silex-href="#!page-les-mots-fant-mes"><div class="silex-element-content"><button id="MyBtn" onclick="topFunction()" title="Les mots fantômes" style="display: block;">Les mots fantômes</button></div></div><div data-silex-type="text" class="editable-style silex-id-1551782471765-7 text-element" data-silex-id="silex-id-1551782471765-7"><div class="silex-element-content normal"><p><br></p><p>Nous constatons donc
+qu’il y a une majeure différence entre la perception de ses 2
+noms, Yanny étant le plus majoritairement entendu. </p>
+
+	<p>Mais comment cela
+	s’explique-t-il ? </p>
+
+<p>Grâce à quelques
+recherches, nous avons trouvé que cela pouvait s’expliquer de
+manière scientifique. </p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551782523400-8 text-element" data-silex-id="silex-id-1551782523400-8"><div class="silex-element-content normal"><ul><li><h3>C) <u>Explication de Yanny ou Laurel</u><u><br></u></h3></li></ul></div></div><div data-silex-type="text" class="editable-style silex-id-1552053551403-50 text-element" data-silex-id="silex-id-1552053551403-50"><div class="silex-element-content normal"><br><p><a href="https://www.nytimes.com/interactive/2018/05/16/upshot/audio-clip-yanny-laurel-debate.html">https://www.nytimes.com/interactive/2018/05/16/upshot/audio-clip-yanny-laurel-debate.html</a>&nbsp;</p>
+
+</div></div><div data-silex-type="text" class="editable-style silex-id-1552053619306-51 text-element" data-silex-id="silex-id-1552053619306-51"><div class="silex-element-content normal"><p>→ <br></p></div></div><div data-silex-type="image" class="editable-style silex-id-1551782784949-10 image-element" data-silex-id="silex-id-1551782784949-10"><img src="Yanny-Laurel-fr%C3%A9quence.jpg" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1552053905375-52 text-element" data-silex-id="silex-id-1552053905375-52"><div class="silex-element-content normal"><br><p>De
+plus, il y a aussi une notion d’anticipation. Si la question posée
+n’avait pas été « entendez-vous Yanny ou Laurel ? », mais
+simplement « qu’entendez-vous ? », la réponse aurait pu être
+différente. Or, le cerveau n’aime pas l’inconnu
+et se rattache donc à des sons qu’il a déjà perçus, ici, Yanny
+ou Laurel.</p>
+
+	<p>Notre perception de
+	cet enregistrement peut également  dépendre de la qualité de
+	l’appareil sur lequel nous l’écoutons. Il est donc possible de
+	ne pas entendre la même chose que la personne à côté de nous,
+	qui n'écoute pas sur le même appareil surtout si l'âge de
+	l'audition est différent.</p>
+
+<p>De plus, de nos
+jours, les écouteurs ou casques sont de plus en plus utilisés,
+notamment chez les jeunes, ce qui réduit considérablement la
+capacité à entendre correctement, ou provoque même des troubles de
+l'audition, ce qui pourrait expliquer les 27,9% de personnes entre 15
+et 26 ans ayant entendu “Laurel”, une fréquence basse. 
+</p>
+<p>Il est donc "normal"
+de percevoir différemment les fréquences chez chaque individu.</p>
+
+</div></div><div data-silex-type="text" class="editable-style silex-id-1551782005519-3 text-element" data-silex-id="silex-id-1551782005519-3"><div class="silex-element-content normal"><p><br></p><p>Au cours de notre
+TPE, nous avons réalisé un sondage auditif sur plusieurs personnes
+afin d’observer les différentes perceptions du son pour chaque
+individu. Ce sondage a été réalisé sur 221 personnes, de tout âge
+et tout sexe. </p>
+<p>La question était
+la suivante :<b> entendez-vous Yanny ou Laurel ?</b></p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552052960806-48 text-element" data-silex-id="silex-id-1552052960806-48"><div class="silex-element-content normal"><br><p>Tout d’abord, il s’agit d’un enregistrement de fréquences.
+En effet, les noms Yanny et Laurel se situent à 2 fréquences
+distinctes. Yanny est une fréquence haute, qui a tendance à être
+entendue par des oreilles jeunes tandis que Laurel se situe à une
+fréquence basse, qui a plus tendance à être entendue par les
+oreilles plus âgées. En pourcentage, 72% des personnes interrogées
+entre 14 et 26 ans et 95% des personnes entre 26 et 60 ans entendent
+Yanny. Tandis que seulement 27,9% des gens entre 14 et 26 ans et 5%
+des personnes entre 26 et 50 ans entendent Laurel. Ces pourcentages
+ne sont donc pas complètement représentatif car pour la tranche
+d'âge entre 26 et 50 ans, l'effectif total est nettement inférieur
+à celui pour la tranche d'âge entre 15 et 26 ans, ce qui ne permet
+pas de tirer de conclusion très précise. 
+</p>
+
+<br></div></div></div></div><div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1551431534260-12 section-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551431534260-12"><div data-silex-type="container" class="editable-style silex-id-1551431534258-11 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1551431534258-11"><div data-silex-type="text" class="editable-style silex-id-1551431566878-13 text-element" data-silex-id="silex-id-1551431566878-13" data-silex-href="#!page-les-illusions-auditives"><div class="silex-element-content normal"><h3>LES ILLUSIONS AUDITIVES<br></h3></div></div><div data-silex-type="image" class="editable-style silex-id-1551714869784-48 image-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551714869784-48"><img src="cerveau-musique.jpg" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1551431599813-14 text-element" data-silex-id="silex-id-1551431599813-14"><div class="silex-element-content normal"><h1>LE PARADOXE DE TRITON<br></h1></div></div><div data-silex-type="image" class="editable-style silex-id-1551781064322-1 image-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551781064322-1"><img src="tableau-paradoxe-de-triton.png" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1551709859059-24 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551709859059-24"><div class="silex-element-content normal"><p><br></p><p>
+- un « + »
+représente lorsque la deuxième note du son était plus aiguë que
+la première, c'est à dire un intervalle montant</p>
+<p>
+- tandis qu'un « - »
+représente l'inverse, c'est à dire, lorsque la seconde note
+entendue était plus grave la première, un intervalle descendant.</p>
+<p>
+ Nous avons représenté dans
+un tableau les différentes combinaisons obtenues ainsi que leur
+effectif.</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551709361790-21 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551709361790-21"><div class="silex-element-content normal"><br><p>
+Nous avons donc réalisé
+l'expérience sur 25 personnes. Nous avons fait écouter à chacune
+l'enregistrement dans les mêmes conditions et nous avons noté ce
+qu'ils entendaient : 
+</p>
+
+</div></div><div data-silex-type="text" class="editable-style silex-id-1551709293430-20 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551709293430-20"><div class="silex-element-content normal"><p>------------------------------------------------------------------------------------ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ------------------------------------------------------------------------------------------------<br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551709109978-17 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551709109978-17"><div class="silex-element-content normal"><p><br></p><p>
+L'orientation de la
+représentation circulaire est donc ce qui explique les différentes
+interprétations possibles. 
+﻿</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551709537193-23 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551709537193-23"><div class="silex-element-content normal"><p>Une difficulté à déterminer quelle note est la plus aiguë résiderait dans une position des 2 notes trop semblable : dans l'exemple, le La (A) et le Ré bémol ( D# ) se situent au même niveau ; une personne possédant cette représentation aurait donc du mal à décider quelle note est la plus aiguë.<br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551709054991-16 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551709054991-16"><div class="silex-element-content normal"><br><p>
+ Or, on considère que plus
+une note est représentée haut sur le cercle, plus l'auditeur la
+percevra aiguë et au contraire, plus elle est située bas, plus elle
+sera perçue grave. Ainsi dans l'exemple du schéma, le Do serait
+entendu aigu tandis que le Fa serait perçu comme grave : la
+succession de ces deux notes (Do puis Fa) serait donc exprimée comme
+un intervalle descendant chez cette personne.</p>
+
+</div></div><div data-silex-type="text" class="editable-style silex-id-1551709002484-15 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551709002484-15"><div class="silex-element-content normal"><p><br></p><p>
+Les différentes places dans
+le cercle que peut avoir une même note sont la raison de la
+différente perception que chaque personne peut avoir de cette
+illusion. En effet, dans cette illusion chaque note est jouée
+simultanément sur 5 octaves. Ce type de son ne permet pas à
+l'auditeur de se faire une idée précise de l'octave auquel la note
+appartient, il fait donc sa propre interprétation en fonction de la
+position de la note entendue dans sa représentation circulaire.</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551708951700-14 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551708951700-14"><div class="silex-element-content normal"><p><br></p><p>
+Celui-ci peut être orienté
+de n'importe quelle manière tant qu'il respecte l'ordre des
+demi-tons.</p>
+
+<br><p></p></div></div><div data-silex-type="image" class="editable-style silex-id-1551708830940-11 image-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551708830940-11"><img src="cercle-fleche.png" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1551708744501-10 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551708744501-10"><div class="silex-element-content normal"><br><p>
+Ainsi, c'est sur cette
+représentation que repose l'explication du paradoxe de triton. Dans
+le paradoxe de triton, chaque demi-ton est associé à celui se
+situant en face de lui, formant ce qui est appelé en musique, des
+tritons. 
+</p>
+
+</div></div><div data-silex-type="image" class="editable-style silex-id-1551708709723-9 image-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551708709723-9"><img src="Cercle.png" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1551708664042-8 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551708664042-8"><div class="silex-element-content normal"><p><br></p><p>
+La suite périodique des tons
+permet donc la représentation des notes de façon circulaire : 
+</p>
+
+<br><p></p></div></div><div data-silex-type="image" class="editable-style silex-id-1551708619689-7 image-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551708619689-7"><img src="Piano.png" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1551708577611-6 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551708577611-6"><div class="silex-element-content normal"><p><br></p><p>
+Tout d'abord, une gamme
+usuelle de musique se compose de 12 demi-tons qui forment une octave
+(do/C, do#/C#, ré/D, ré#/D#, mi/E, fa/F, fa#/F#, sol/G, sol#/G#,
+la/A, la#/A#, si/B). Cette suite de tons est appelées périodique.
+En effet, une gamme est répétée plusieurs fois de Do à Do. Ce
+sont seulement les octaves qui varient mais l'ordre des demi-tons
+joués est conservé. Cela est très bien
+représenté sur un piano :</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551708444308-4 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551708444308-4"><div class="silex-element-content normal"><p><br></p><p>
+En écoutant l'enregistrement,
+essayez de déterminer pour chaque intervalle de son, quelle note est
+la plus aiguë : la première ou la deuxième ? Demandez à
+une autre personne ce qu'elle entend. Avez vous les mêmes réponses ?
+Il est probable que vous ne soyez pas du même avis et cela est
+surprenant. 
+</p>
+<p>
+Effectivement, comment un même
+son peut il être perçu de différentes manières ?</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551709433533-22 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551709433533-22"><div class="silex-element-content normal"><p>Elle est composé de 4 intervalles de son, chacun composé de 2 notes<br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551708075590-1 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551708075590-1"><div class="silex-element-content normal"><p><br></p><p>
+<b>Le paradoxe de triton,</b>
+découvert par le professeur de psychologie, Diana Deutsch, est une
+illusion musicale, c'est à dire qu'elle joue sur les notes.</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551708372859-3 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551708372859-3"><div class="silex-element-content normal"><p>La voici :<br></p></div></div><div data-silex-type="html" class="editable-style silex-id-1551820694112-1 html-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551820694112-1"><div class="silex-element-content"><audio controls="controls">
+    <source src="tritone.wav" type="audio/wav">
+    Votre navigateur n'est pas compatible
+</audio></div></div><div data-silex-type="text" class="editable-style silex-id-1551708906199-13 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551708906199-13"><div class="silex-element-content normal"><p><br></p><p>
+Cependant, si chaque personne
+possède mentalement et inconsciemment une représentation de ce
+cercle, tout le monde ne se la représenterait pas de la même
+façon : l'orientation du cercle varie. Pour certain le cercle
+est orienté de façon à ce que le do ( C ) soit représenté en
+haut et donc le fa (F) à l'opposé, c'est à dire tout en bas comme
+représenté sur le schéma. Pour d'autres à l'inverse, le Fa peut
+se situer au sommet du cercle et donc le Do en dessous.</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551865425277-0 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551865425277-0"><div class="silex-element-content normal"><p>Cela nous amène donc à la question :<br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551708858171-12 text-element page-le-paradoxe-de-triton paged-element" data-silex-id="silex-id-1551708858171-12"><div class="silex-element-content normal"><p><i><u>Schéma exemple</u></i><br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551710256678-31 text-element" data-silex-id="silex-id-1551710256678-31"><div class="silex-element-content normal"><p><br></p><p>
+Le paradoxe de Triton est donc
+une illusion auditive complexe et très intéressante à étudier.</p>
+<p>
+<br>
+
+</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552039764336-43 text-element" data-silex-id="silex-id-1552039764336-43"><div class="silex-element-content normal"><p><a href="http://deutsch.ucsd.edu/psychology/pages.php?i=206">http://deutsch.ucsd.edu/psychology/pages.php?i=206</a> <i>pour plus d'informations</i><br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552039954412-44 text-element" data-silex-id="silex-id-1552039954412-44"><div class="silex-element-content normal"><p>→<br></p></div></div><div data-silex-type="container" class="editable-style container-element silex-id-1552059878692-85" data-silex-id="silex-id-1552059878692-85"><div data-silex-type="image" class="editable-style image-element silex-id-1552059878692-86" data-silex-id="silex-id-1552059878692-86"><img src="fl%C3%A8che-vers-le-haut.jpg" class="silex-element-content"></div><div data-silex-type="html" class="editable-style html-element silex-id-1552059878694-87" data-silex-id="silex-id-1552059878694-87"><div class="silex-element-content"><button id="MyBtn" onclick="topFunction()" title="Haut de la page" style="display: block;">Haut de la page</button></div></div></div><div data-silex-type="image" class="editable-style silex-id-1552061086214-99 image-element" data-silex-id="silex-id-1552061086214-99"><img src="fl%C3%A8che2.jpeg" class="silex-element-content"></div><div data-silex-type="html" class="editable-style silex-id-1552061113949-100 html-element" data-silex-id="silex-id-1552061113949-100" data-silex-href="#!page-les-mots-fant-mes"><div class="silex-element-content"><button id="MyBtn" onclick="topFunction()" title="Les mots fantômes" style="display: block;">Les mots fantômes</button></div></div><div data-silex-type="text" class="editable-style silex-id-1551709185764-18 text-element" data-silex-id="silex-id-1551709185764-18"><div class="silex-element-content normal"><h3>Comment peut-on expliquer le paradoxe de Triton ?<br></h3></div>﻿﻿﻿﻿</div><div data-silex-type="text" class="editable-style silex-id-1551710073992-27 text-element" data-silex-id="silex-id-1551710073992-27"><div class="silex-element-content normal"><p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551710016646-26 text-element" data-silex-id="silex-id-1551710016646-26"><div class="silex-element-content normal"><p><br></p><p>
+Nous constatons une grande
+diversité de sons entendus : il y a 10 combinaisons
+différentes. Cette expérience prouve donc la différente perception
+des sons en fonction des personnes. Bien que certaines des
+combinaisons semblent se présenter plus de fois que d'autres, il
+n'est pas possible de tirer des conclusions vérifiées, les
+fréquences étant seulement représentatives, dû au petit effectif
+sur lequel l'expérience a été effectuée. 
+</p>
+<p>
+<br>
+
+</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551709227981-19 text-element" data-silex-id="silex-id-1551709227981-19"><div class="silex-element-content normal"><h2><u>EXPÉRIENCE</u></h2><u></u></div></div><div data-silex-type="text" class="editable-style silex-id-1551710193005-30 text-element" data-silex-id="silex-id-1551710193005-30"><div class="silex-element-content normal"><br><p>De plus, les personnes d'une même famille soumises à l'écoute
+de ce paradoxe auraient tendance à avoir une interprétation
+semblable entre elles, ce qui suggérerait une hérédité au niveau
+de la représentation du cercle.</p>
+
+<br></div></div><div data-silex-type="text" class="editable-style silex-id-1551710122057-28 text-element" data-silex-id="silex-id-1551710122057-28"><div class="silex-element-content normal"><br><p>Cependant, une étude a également été réalisée et a démontré
+une orientation du cercle différente chez les populations en
+fonction de la zone géographique. 
+</p>
+
+<br></div></div></div></div><div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1551431636726-16 section-element page-les-mots-fant-mes paged-element" data-silex-id="silex-id-1551431636726-16"><div data-silex-type="container" class="editable-style silex-id-1551431636724-15 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1551431636724-15"><div data-silex-type="text" class="editable-style silex-id-1551431688032-17 text-element" data-silex-id="silex-id-1551431688032-17" data-silex-href="#!page-les-illusions-auditives"><div class="silex-element-content normal"><h3>LES ILLUSIONS AUDITIVES<br></h3></div></div><div data-silex-type="text" class="editable-style silex-id-1551431736266-18 text-element page-les-mots-fant-mes paged-element" data-silex-id="silex-id-1551431736266-18"><div class="silex-element-content normal"><h1>LES MOTS FANTÔMES<br></h1></div></div><div data-silex-type="text" class="editable-style silex-id-1552056799251-58 text-element page-les-mots-fant-mes paged-element" data-silex-id="silex-id-1552056799251-58"><div class="silex-element-content normal"><p>Voici un exemple : écoutez attentivement cet enregistrement et n'hésitez pas à marquer sur un papier les différents mots que vous entendez. <br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552056272083-57 text-element page-les-mots-fant-mes paged-element" data-silex-id="silex-id-1552056272083-57"><div class="silex-element-content normal"><p><br></p><p>
+<b>Les mots fantômes </b>sont
+une illusion, également
+découverte par le professeur Deutsch,
+appelée illusion vocale.</p>
+<p>
+ 
+</p>
+<p>
+Il est parfois possible que ce
+que l'on entend soit influencé par ce que l'on voit, par nos
+connaissances ou encore nos attentes. C'est ce que Diana Deutsch a
+mis en évidence à travers son expérience de « mots
+fantômes ».</p>
+<p>
+L'expérience consiste à
+présenter des pistes auditives, chacune contenant soit deux mots
+courts, soit un mot à deux syllabes. 
+</p>
+<p>
+Les séquences sont présentées
+de même façon par les deux haut-parleurs, un situé sur la gauche
+de l'auditeur et l'autre sur la droite. Elles sont cependant décalées
+dans le temps pour que, lorsque le premier son, c'est-à-dire le
+premier mot ou la première syllabe, sort du haut parleur de droite,
+l'autre son composant la séquence sorte du haut parleur gauche et
+inversement.</p>
+<p>
+Ainsi, pour nous parvenir, les
+sons doivent se propager dans l'air : ils ont donc le temps de
+« se mélanger ». Ces sons nous parviennent donc de
+manière confuse et laissent donc place à la perception de chacun
+pour y donner un sens.</p>
+<p>
+C'est ici que peut varier
+grandement l'interprétation des auditeurs : après un moment à
+écouter des sons ne semblant pas avoir de sens, des mots ou suites
+de mots distincts semblent se former. 
+</p>
+
+<br><p></p></div></div><div data-silex-type="html" class="editable-style silex-id-1551956324635-1 html-element page-les-mots-fant-mes paged-element" data-silex-id="silex-id-1551956324635-1"><div class="silex-element-content"><audio controls="controls">
+    <source src="mots%20fant%C3%B4mes.mp3" type="audio/mp3">
+    Votre navigateur n'est pas compatible
+</audio></div></div><div data-silex-type="text" class="editable-style silex-id-1552057078466-60 text-element page-les-mots-fant-mes paged-element" data-silex-id="silex-id-1552057078466-60"><div class="silex-element-content normal"><p><br></p><p>
+Sur
+le schéma ci-dessous
+les zones
+du cerveau relatives à la compréhension du langage sont
+représentées. L'aire
+de Broca est la zone permettant à l'homme d'avoir un langage
+articulé, en contrôlant les lèvres, la langue ou le larynx par
+exemple.  L'aire de Wernicke, quant
+à elle intervient dans la perception
+des mots, du langage.
+Elle permet
+ainsi
+d'associer les mots, puis de retrouver leur sens. C’est
+donc cette aire qui est à l’origine de la perception des mots
+fantômes.</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552056965832-59 text-element page-les-mots-fant-mes paged-element" data-silex-id="silex-id-1552056965832-59"><div class="silex-element-content normal"><p>L'explication de cette illusion repose principalement sur l'action du cerveau.<br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552057796533-65 text-element" data-silex-id="silex-id-1552057796533-65"><div class="silex-element-content normal"><p><br></p><p>
+Il est de plus possible qu'en
+changeant de position, c'est-à-dire en s'éloignant, se rapprochant
+par rapport à la source du son ou encore en tournant la tête, les
+mots perçus ne soient plus les mêmes : en effet le trajet du
+son a changé, modifiant parfois les sons entendus et donc les mots.</p>
+<p>
+<br>
+
+</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552057853921-66 text-element" data-silex-id="silex-id-1552057853921-66"><div class="silex-element-content normal"><p><br></p><p>
+- Cette habitude du cerveau à
+donner une signification aux sons entendus, mise en avant par Diana
+Deutsch, se retrouve aujourd'hui au quotidien. Par exemple, lorsque
+l'on ne comprend pas ce que quelqu'un souhaite dire et qu'on entend
+quelque chose de complètement différent ou encore dans de
+nombreuses chansons étrangères et plus précisément dans des
+chansons de langues que l'on ne maîtrisent pas, il arrive que des
+mots ou expressions semblent prendre forme dans notre cerveau.</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552057977447-68 text-element" data-silex-id="silex-id-1552057977447-68"><div class="silex-element-content normal"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --&gt; La page&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; de notre site s'y rapporte également.<br></p></div></div><div data-silex-type="html" class="editable-style silex-id-1552058074033-69 html-element" data-silex-id="silex-id-1552058074033-69" data-silex-href="#!page-illusions-auditives-"><div class="silex-element-content"><button id="MyBtn" onclick="topFunction()" title="Les illusions auditives ?" style="display: block;">Les illusions auditives ?</button></div></div><div data-silex-type="text" class="editable-style silex-id-1552057928786-67 text-element" data-silex-id="silex-id-1552057928786-67"><div class="silex-element-content normal"><br><p>
+L'illusion des mots fantômes
+est donc très intéressante, car elle repose sur une interprétation
+variable du cerveau et non pas sur une mauvaise interprétation du
+système auditif.</p>
+
+</div></div><div data-silex-type="html" class="editable-style html-element silex-id-1552059916754-93" data-silex-id="silex-id-1552059916754-93"><div class="silex-element-content"><button id="MyBtn" onclick="topFunction()" title="Haut de la page" style="display: block;">Haut de la page</button></div></div><div data-silex-type="image" class="editable-style image-element silex-id-1552059916751-92" data-silex-id="silex-id-1552059916751-92"><img src="fl%C3%A8che-vers-le-haut.jpg" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1552060862333-94 image-element" data-silex-id="silex-id-1552060862333-94"><img src="fl%C3%A8che2.jpeg" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1552060888110-95 image-element" data-silex-id="silex-id-1552060888110-95"><img src="fl%C3%A8che.jpg" class="silex-element-content"></div><div data-silex-type="html" class="editable-style silex-id-1552060978214-97 html-element" data-silex-id="silex-id-1552060978214-97" data-silex-href="#!page-yanny-laurel"><div class="silex-element-content"><button id="MyBtn" onclick="topFunction()" title="Yanny ou Laurel ?" style="display: block;">Yanny ou Laurel ?</button></div></div><div data-silex-type="html" class="editable-style silex-id-1552060913361-96 html-element" data-silex-id="silex-id-1552060913361-96" data-silex-href="#!page-le-paradoxe-de-triton"><div class="silex-element-content"><button id="MyBtn" onclick="topFunction()" title="Le paradoxe de Triton" style="display: block;">Le paradoxe de Triton</button></div></div><div data-silex-type="text" class="editable-style silex-id-1552057486790-63 text-element" data-silex-id="silex-id-1552057486790-63"><div class="silex-element-content normal"><br><p>Ici, peut être avez-vous perçu des mots tels que "Nowhere"
+(nulle part en angais) ou encore "Bueno", du nom d'un
+produit d'une célèbre marque de confiserie ou signifant “bon”
+en espagnol?</p>
+
+<br></div></div><div data-silex-type="image" class="editable-style silex-id-1552057136625-61 image-element" data-silex-id="silex-id-1552057136625-61"><img src="cerveau-mots-fant%C3%B4mes.png" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1552057739081-64 text-element" data-silex-id="silex-id-1552057739081-64"><div class="silex-element-content normal"><p><br></p><p>
+Tout d'abord les mots entendus
+dépendent des langues parlées par celui qui écoute : par
+exemple, une personne ayant le français pour langue natale, aurait
+tendance à entendre des mots et phrases dans cette langue bien que
+l'enregistrement des « mots fantômes » soit en anglais.
+Tout dépend des langues maîtrisées. Cette interprétation est
+valable pour toutes les langues, le cerveau cherchant constamment à
+entendre quelque chose qu'il est capable de reconnaître, à lui
+donner une signification. 
+</p>
+<p>
+Mais les différentes
+interprétations ne s'arrêtent pas là : le cerveau jouant un
+rôle important dans la perception des sons, il aura tendance à
+assimiler les mots entendus en fonction de l'état d'esprit dans
+lequel l'auditeur se trouve. Des émotions et états tels que le
+stress, la faim (« Bueno » dans l'enregistrement plus
+haut par exemple) ou la dépression par exemple pourraient donc
+influencer ce qu'on entend.</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552057155157-62 text-element" data-silex-id="silex-id-1552057155157-62"><div class="silex-element-content normal"><p><i><u>Schéma du cerveau représentant les différentes zones relatives à la compréhension du langage</u></i><br></p></div></div><div data-silex-type="image" class="editable-style silex-id-1551715463787-58 image-element" data-silex-id="silex-id-1551715463787-58"><img src="cerveau.jpg" class="silex-element-content"></div></div></div><div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1551432928757-21 section-element page-le-son paged-element" data-silex-id="silex-id-1551432928757-21"><div data-silex-type="container" class="editable-style silex-id-1551432928753-20 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1551432928753-20"><div data-silex-type="text" class="editable-style silex-id-1551433350971-22 text-element" data-silex-id="silex-id-1551433350971-22"><div class="silex-element-content normal"><h1>LE SON <br></h1></div></div><div data-silex-type="image" class="editable-style silex-id-1552036171540-12 image-element page-le-son paged-element" data-silex-id="silex-id-1552036171540-12"><img src="Sch%C3%A9ma1.jpg" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1552036204658-13 text-element page-le-son paged-element" data-silex-id="silex-id-1552036204658-13"><div class="silex-element-content normal"><br><p>Le
+son est une vibration mécanique qui se propage dans l’air jusqu’à
+nos tympans et les font vibrer. Il désigne la sensation auditive à
+laquelle cette vibration est susceptible de donner naissance.</p>
+<p>Le
+cerveau traduit ces vibrations qui sont ressenties par les êtres
+humains et les animaux avec le sens de l’ouïe entre une fréquence
+de 20 à 20 000 Hertz, ces valeurs pouvant varier avec l’âge. </p>
+
+</div></div><div data-silex-type="text" class="editable-style silex-id-1552036729368-14 text-element page-le-son paged-element" data-silex-id="silex-id-1552036729368-14"><div class="silex-element-content normal"><p><br></p><p>La
+durée d'un son est le moment pendant lequel on perçoit ces
+vibrations. Elle peut être plus ou moins longue en fonction de la
+sensibilité de l’oreille et donc en fonction des personnes. </p>
+<p><a></a>
+Le
+son se propage dans l'air sous la forme d'une onde jusqu'au pavillon,
+partie de l'oreille externe qui capte et amplifie l'onde et la
+conduit jusqu'au tympan via le conduit auditif externe. Le
+tympan vibre et transmet les vibrations dans l’oreille moyenne à
+la chaîne des osselets, qui amplifie les vibrations. Celles-ci sont
+ensuite transmises à l’oreille interne via une membrane, la
+fenêtre ovale, puis au liquide cochléaire, qui met en mouvement les
+cellules ciliées. Ces vibrations mécaniques sont transformées en
+impulsions électriques qui sont ensuite transmises au cerveau.
+Lorsque les vibrations passent, l'intensité du son est réduite afin
+de protéger les récepteurs cellulaires de l'oreille interne contre
+les bruits intenses et prolongés.</p>
+
+<br><p></p></div></div><div data-silex-type="image" class="editable-style silex-id-1552036819146-15 image-element page-le-son paged-element" data-silex-id="silex-id-1552036819146-15"><img src="SCH%C3%89MA2.gif" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1552036964556-17 image-element page-le-son paged-element" data-silex-id="silex-id-1552036964556-17"><img src="SCH%C3%89MA3.png" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1552037053063-20 text-element page-le-son paged-element" data-silex-id="silex-id-1552037053063-20"><div class="silex-element-content normal"><p>&nbsp;</p><p>L'intensité
+du son est une mesure de la quantité d'énergie transmise en une
+seconde sur une surface d'1 m². Elle dépend de l'amplitude, de la
+vibration sonore et est exprimée en décibels.</p>
+<p>L'amplitude
+est une autre caractéristique importante d'un son. L'intensité
+perçue en dépend en partie : le son peut être fort ou doux. Dans
+l'air, l'amplitude correspond aux variations de pression de l'onde. </p>
+<p>Les
+sons peuvent avoir une même fréquence mais une amplitude
+différente. Ils seront perçus de manière plus ou moins forte. </p>
+
+<br><p></p></div></div><div data-silex-type="image" class="editable-style silex-id-1552037127268-21 image-element page-le-son paged-element" data-silex-id="silex-id-1552037127268-21"><img src="SCH%C3%89MA4.png" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1552037417527-22 text-element page-le-son paged-element" data-silex-id="silex-id-1552037417527-22"><div class="silex-element-content normal"><p><br></p><p>L'oreille
+humaine est capable de distinguer, en fonction de la sensibilité de
+chacun, de très faibles intensités en décibels. La sensibilité de
+notre oreille est la plus grande pour les sons compris entre les
+fréquences 500 et 800 Hz.</p>
+<p>Les
+sons qui se situent au-dessus ou en dessous de ces limites ont besoin
+d'une plus grande amplitude pour être perçus avec la même force.</p>
+
+<br><p></p></div></div><div data-silex-type="image" class="editable-style silex-id-1552037482281-23 image-element page-le-son paged-element" data-silex-id="silex-id-1552037482281-23"><img src="sch%C3%A9ma5.jpg" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1552037528921-24 text-element page-le-son paged-element" data-silex-id="silex-id-1552037528921-24"><div class="silex-element-content normal"><p><u><i>Graphique de l'intensité nécessaire à la perception (en dB) en fonction des fréquences (en Hz)</i></u><br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552037722889-25 text-element page-le-son paged-element" data-silex-id="silex-id-1552037722889-25"><div class="silex-element-content normal"><p><br></p><p>0
+dB correspond au minimum que l'oreille humaine peut percevoir, il est
+appelé seuil d'audibilité mais il ne correspond pas au silence
+absolu. La plupart des personnes ont un seuil d'audibilité supérieur
+à 0 dB qui est d’environ 4 dB.</p>
+<p>Le
+seuil de douleur est de 130 dB, mais l'oreille peut subir des
+dommages à partir d’environ 80dB.</p>
+
+<br><p></p></div></div><div data-silex-type="image" class="editable-style silex-id-1552037791215-26 image-element page-le-son paged-element" data-silex-id="silex-id-1552037791215-26"><img src="SCH%C3%89MA6.png" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1552037816097-27 text-element page-le-son paged-element" data-silex-id="silex-id-1552037816097-27"><div class="silex-element-content normal"><p><br></p><p>&nbsp;La
+fréquence d'un son est exprimée en Hertz (Hz). Elle est liée à sa
+hauteur. Une fréquence faible correspond à un son grave, une
+fréquence élevée correspond à un son aigu.</p>
+
+<br><p></p></div></div><div data-silex-type="image" class="editable-style silex-id-1552037904003-28 image-element page-le-son paged-element" data-silex-id="silex-id-1552037904003-28"><img src="sch%C3%A9ma7.jpg" class="silex-element-content"></div><div data-silex-type="container" class="editable-style silex-id-1552037958102-29 container-element page-le-son paged-element" data-silex-id="silex-id-1552037958102-29"><div data-silex-type="text" class="editable-style silex-id-1552037972374-30 text-element page-le-son paged-element" data-silex-id="silex-id-1552037972374-30"><div class="silex-element-content normal"><p><br></p><p>Une
+onde sonore est un phénomène périodique, c’est-à-dire un
+phénomène qui se répète dans le temps et dans l’espace.</p>
+<p>&nbsp;Une
+période correspond au temps au bout duquel un phénomène périodique
+se répète. La fréquence d’un son est la mesure du nombre de
+périodes par unité de temps :</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552038068476-31 text-element" data-silex-id="silex-id-1552038068476-31"><div class="silex-element-content normal"><p>On exprime f (la fréquence) en Hertz et T (la période) en secondes<br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1551433723591-27 text-element" data-silex-id="silex-id-1551433723591-27"><div class="silex-element-content normal"><h2>f = 1 / T<br></h2></div></div></div><div data-silex-type="image" class="editable-style silex-id-1552035091269-2 image-element page-le-son paged-element" data-silex-id="silex-id-1552035091269-2"><img src="SCH%C3%89MA8.gif" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1552038220195-32 text-element page-le-son paged-element" data-silex-id="silex-id-1552038220195-32"><div class="silex-element-content normal"><br><p>Le cerveau joue le rôle le plus important dans la
+perception du son : il distingue, reconnaît et évalue les sons,
+selon leur amplitude. Le cerveau fait également la liaison entre les
+deux oreilles afin de situer le son dans l'espace. L'oreille transmet
+les informations brutes. Grâce à cela nous pouvons reconnaître un
+instrument de musique et quelqu’un en particulier. 
+</p>
+<p>La perception du timbre, et même de la justesse,
+peut varier d'une personne à une autre. D’une part, s’il y a
+altération des facultés neurologiques. D’autre part, à cause de
+la dégradation du système auditif, en effet, le système auditif
+est très sensible, les cellules cillées, présentes dans l’oreille,
+qui permettent la transmission du son jusqu’au cerveau sont peu
+nombreuses et très sensibles. Lorsqu’elles sont touchées, il y a
+perte de l’audition car elles ne se régénèrent pas.</p>
+<p>Cette différence de perception peut également être
+due à un vieux système auditif. 
+</p>
+<p>L’oreille peut également masquer, changer ou
+mettre en évidence des éléments constituant le son.</p>
+
+<br></div></div><div data-silex-type="image" class="editable-style silex-id-1552038306324-33 image-element page-le-son paged-element" data-silex-id="silex-id-1552038306324-33"><img src="sch%C3%A9ma9.jpg" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1552038340242-34 text-element page-le-son paged-element" data-silex-id="silex-id-1552038340242-34"><div class="silex-element-content normal"><p><br></p><p>L’onde
+sonore se propage dans toutes les directions et s’atténue avec la
+distance, la dispersion de l’énergie acoustique ainsi que
+l’absorption par le milieu.</p>
+<p> Le
+son est transmis par l’air en général, mais peut aussi être
+réfléchi, c’est l’écho. 
+</p>
+<p>L’écho
+correspond à la répétition d’un son qui se réfléchit après
+avoir percuté un obstacle.</p>
+
+<br><p></p></div></div><div data-silex-type="image" class="editable-style silex-id-1552038397813-35 image-element page-le-son paged-element" data-silex-id="silex-id-1552038397813-35"><img src="sch%C3%A9ma10.png" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1552038423488-36 text-element page-le-son paged-element" data-silex-id="silex-id-1552038423488-36"><div class="silex-element-content normal"><p><br></p><p>La
+vitesse de propagation du son varie en fonction de la nature, de la
+température et de la pression du milieu. Les ondes sonores se
+déplacent ainsi à environ 340 mètres par seconde dans  un milieu
+aérien à 15 °C. Dans les autres milieux, gazeux, liquide et
+solide, le son se propage beaucoup plus rapidement, comme dans l’eau
+où il se propage 4 fois plus vite que dans l’air, environ 1500
+mètres par secondes</p>
+
+<br><p></p></div></div><div data-silex-type="image" class="editable-style silex-id-1552038486043-37 image-element page-le-son paged-element" data-silex-id="silex-id-1552038486043-37"><img src="sch%C3%A9ma11.jpg" class="silex-element-content"></div><div data-silex-type="container" class="editable-style silex-id-1551434297618-34 container-element page-le-son paged-element" data-silex-id="silex-id-1551434297618-34"><div data-silex-type="text" class="editable-style silex-id-1551434294131-33 text-element" data-silex-id="silex-id-1551434294131-33"><div class="silex-element-content normal"><br><p>Pour calculer le
+temps parcouru par les ondes sonores, on utilise la formule : <b>t </b><b>=
+</b><b>d</b><b> / </b><b>v</b></p>
+<p><i><b>t</b></i> est
+le temps de parcours en secondes ; <i><b>d </b></i>est la distance
+parcourue par l’onde en mètres ;<i><b>
+</b></i><i><b>v</b></i>
+est la vitesse de propagation de l’onde dans le milieu (dans l’air
+V=340 m/s)</p>
+
+</div></div><div data-silex-type="text" class="editable-style silex-id-1551434397927-35 text-element" data-silex-id="silex-id-1551434397927-35"><div class="silex-element-content normal"><p>d'où Distance = temps x vitesse<br></p></div></div></div><div data-silex-type="text" class="editable-style silex-id-1552036893953-16 text-element page-le-son paged-element" data-silex-id="silex-id-1552036893953-16"><div class="silex-element-content normal"><p>&nbsp;
+	
+
+
+</p><p>L’intensité du
+son est également importante dans la perception du son : l’oreille
+ne peut comprendre le signal qu’à partir d’un certain seuil de
+puissance. &nbsp;</p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552051987347-47 text-element" data-silex-id="silex-id-1552051987347-47"><div class="silex-element-content normal"><p><u>﻿<i>﻿Schéma du système auditif</i></u><br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552051927594-46 text-element" data-silex-id="silex-id-1552051927594-46"><div class="silex-element-content normal"><p><u><i>Graphique du taux d'amplitude du son en fonction du temps</i></u><br></p></div></div><div data-silex-type="container" class="editable-style container-element silex-id-1552059750700-82" data-silex-id="silex-id-1552059750700-82"><div data-silex-type="image" class="editable-style image-element silex-id-1552059750701-83" data-silex-id="silex-id-1552059750701-83"><img src="fl%C3%A8che-vers-le-haut.jpg" class="silex-element-content"></div><div data-silex-type="html" class="editable-style html-element silex-id-1552059750704-84" data-silex-id="silex-id-1552059750704-84"><div class="silex-element-content"><button id="MyBtn" onclick="topFunction()" title="Haut de la page" style="display: block;">Haut de la page</button></div></div></div><div data-silex-type="image" class="editable-style silex-id-1551715225791-51 image-element" data-silex-id="silex-id-1551715225791-51"><img src="le-son-cest-une....png" class="silex-element-content"></div></div></div><div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1551710927834-36 section-element page-diff-rentes-perceptions paged-element" data-silex-id="silex-id-1551710927834-36"><div data-silex-type="container" class="editable-style silex-id-1551710927831-35 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1551710927831-35"><div data-silex-type="text" class="editable-style silex-id-1551711038542-38 text-element" data-silex-id="silex-id-1551711038542-38" data-silex-href="#!page-les-illusions-auditives"><div class="silex-element-content normal"><h3>LES ILLUSIONS AUDITIVES<br></h3></div></div><div data-silex-type="text" class="editable-style silex-id-1551710986391-37 text-element page-diff-rentes-perceptions paged-element" data-silex-id="silex-id-1551710986391-37"><div class="silex-element-content normal"><h1>LES DIFFÉRENTES PERCEPTIONS DES ILLUSIONS<br></h1></div>﻿﻿</div><div data-silex-type="text" class="editable-style silex-id-1551711134867-41 text-element page-diff-rentes-perceptions paged-element" data-silex-id="silex-id-1551711134867-41" data-silex-href="#!page-le-paradoxe-de-triton"><div class="silex-element-content normal"><h2>1) Le paradoxe de Triton<br></h2></div>﻿﻿﻿﻿﻿</div><div data-silex-type="image" class="editable-style silex-id-1551715345603-55 image-element page-diff-rentes-perceptions paged-element" data-silex-id="silex-id-1551715345603-55" data-silex-href="#!page-le-paradoxe-de-triton"><img src="cerveau-musique.jpg" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1551711280771-43 text-element page-diff-rentes-perceptions paged-element" data-silex-id="silex-id-1551711280771-43" data-silex-href="#!page-yanny-laurel"><div class="silex-element-content normal"><h2>3) Yanny ou Laurel <br></h2></div></div><div data-silex-type="image" class="editable-style silex-id-1551715367020-56 image-element page-diff-rentes-perceptions paged-element" data-silex-id="silex-id-1551715367020-56" data-silex-href="#!page-yanny-laurel"><img src="yanny-laurel.jpg" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1551711191027-42 text-element page-diff-rentes-perceptions paged-element" data-silex-id="silex-id-1551711191027-42" data-silex-href="#!page-les-mots-fant-mes"><div class="silex-element-content normal"><h2>2) Les mots fantômes<br></h2></div></div><div data-silex-type="image" class="editable-style silex-id-1551715426950-57 image-element page-diff-rentes-perceptions paged-element" data-silex-id="silex-id-1551715426950-57" data-silex-href="#!page-les-mots-fant-mes"><img src="cerveau.jpg" class="silex-element-content"></div></div></div><div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1552035578570-4 section-element page-conclusion paged-element" data-silex-id="silex-id-1552035578570-4"><div data-silex-type="container" class="editable-style silex-id-1552035578565-3 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1552035578565-3"><div data-silex-type="text" class="editable-style silex-id-1552035703235-6 text-element page-conclusion paged-element" data-silex-id="silex-id-1552035703235-6"><div class="silex-element-content normal"><h1>CONCLUSION<br></h1></div></div><div data-silex-type="text" class="editable-style silex-id-1552035879438-9 text-element page-conclusion paged-element" data-silex-id="silex-id-1552035879438-9"><div class="silex-element-content normal"><p><br></p><p>Chacune de ces
+expériences reposent sur différents facteurs : amplitude du son,
+provenance du son, mémoire auditive, effet de déjà-vu auditif,
+relation vue-ouïe, répétition de sons… Car en effet, le cerveau
+cherche toujours à donner un son ou un mot connu à ce qu’il ne
+connait pas, ce qui aboutit à cette variété de perceptions des
+illusions auditives chez chacun des individus. Chacun de ses facteurs
+a été pris en compte puisque nous avons réalisé et essayé ces
+expériences sur plus d'une centaine de personnes, les perceptions
+des illusions étant donc différentes. </p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552035930784-10 text-element page-conclusion paged-element" data-silex-id="silex-id-1552035930784-10"><div class="silex-element-content normal"><p><br></p><p>Néanmoins,
+certaines explications d’illusions auditives restent méconnues.
+S’agit-il seulement de hasard ou de psychologie, ou y a-t-il une
+explication scientifique derrière celles-ci ? </p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552035985047-11 text-element page-conclusion paged-element" data-silex-id="silex-id-1552035985047-11"><div class="silex-element-content normal"><p><br></p><p>Ce projet nous a
+permis de pouvoir acquérir de nombreuses connaissances et de
+répondre à certaines interrogations quant à ce sujet, notamment
+comment et pourquoi notre cerveau perçoit-il les illusions auditives
+différemment. Nous espérons donc que vous en aurez aussi appris un
+peu plus sur ce sujet fascinant. </p>
+
+<br><p></p></div></div><div data-silex-type="html" class="editable-style silex-id-1552150636375-22 html-element" data-silex-id="silex-id-1552150636375-22"><div class="silex-element-content"><img src="oreille-chante.gif"> </div></div><div data-silex-type="text" class="editable-style silex-id-1552035752851-7 text-element" data-silex-id="silex-id-1552035752851-7"><div class="silex-element-content normal"><br><p>Nous savons maintenant que notre ouïe n'est pas fiable ! 
+</p>
+<p>En effet, nous venons de démontrer que la perception des
+illusions auditives est très subjective puisqu’elle est différente
+d’un individu à un autre. Elle dépend d’ailleurs d’un grand
+nombre de paramètres, comme les propriétés physiques de la
+propagation du son, le mécanisme de l’oreille et son anatomie, et
+enfin de l’analyse qu’en fait le cerveau. Ainsi, ce projet nous a
+permis de mieux comprendre comment le cerveau perçoit les illusions
+auditives grâce à des lois physiques et naturelles, et aussi
+comment celui-ci peut nous tromper en percevant des sons qui
+n'existent pas ou qui diffèrent de la réalité. 
+</p>
+
+<br></div></div><div data-silex-type="text" class="editable-style silex-id-1552035797267-8 text-element" data-silex-id="silex-id-1552035797267-8"><div class="silex-element-content normal"><p><br></p><p>Nous avons pu
+constater ce phénomène d'illusions auditives à travers des
+expériences : les découvertes de Diana Deutsch, l’effet McGurk,
+ou bien l’illusion Yanny et Laurel. </p><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552222864687-0 text-element text-style-2" data-silex-id="silex-id-1552222864687-0"><div class="silex-element-content normal"><p><i>Site réalisé par Clémentine, Cléo, Marine et Maëlle <br></i></p><p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Créé avec Silex (&nbsp;<a href="https://framalibre.org/content/silex">https://framalibre.org/content/silex</a> )<br></i></p><br></div></div></div></div><div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1552038685668-39 section-element paged-element page-sources" data-silex-id="silex-id-1552038685668-39"><div data-silex-type="container" class="editable-style silex-id-1552038685663-38 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1552038685663-38"><div data-silex-type="image" class="editable-style silex-id-1552038818805-42 image-element paged-element page-sources" data-silex-id="silex-id-1552038818805-42"><img src="bibliographie.jpg" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1552063469227-103 text-element" data-silex-id="silex-id-1552063469227-103"><div class="silex-element-content normal"><h2><i>--&gt; L'AUDITION</i><br></h2></div></div><div data-silex-type="text" class="editable-style silex-id-1552063534457-104 text-element" data-silex-id="silex-id-1552063534457-104"><div class="silex-element-content normal"><br><p><u>Sites web :</u></p>
+
+	<p>-Gabrielle Bonnet
+	et Gilles Camus, « AUDITION HUMAINE », Ens-Lyon, édité par
+	Gabrielle Bonnet et Delphine CHAREYRON, 01/09/2005, consulté en
+	octobre 2018, disponible sur
+	<a href="http://culturesciencesphysique.ens-lyon.fr/ressource/Audition.xml">http://culturesciencesphysique.ens-lyon.fr/ressource/Audition.xml</a>&nbsp;</p>
+
+
+	<p>-Jean-Claude
+	RISSET, David WESSEL, « ILLUSIONS AUDITIVES », Encyclopædia
+	Universalis [en ligne], consulté le 25 novembre 2018. URL :
+	<a href="http://www.universalis.fr/encyclopedie/illusions-auditives/">http://www.universalis.fr/encyclopedie/illusions-auditives/</a></p>
+
+
+	<p>-Guy Rebillard,
+	Rémy Pujol et Marc Lenoir, « VOYAGE AU CENTRE DE L’AUDITION »,
+	Cochlea, 27/12/2016, consulté en décembre 2018, janvier et février
+	2019. URL : <a href="http://www.cochlea.eu/cochlee">http://www.cochlea.eu/cochlee</a>&nbsp;</p>
+
+
+	<p>- auteur(s)
+	inconnu(s) "ANATOMIE DU CERVEAU ET DU SYSTEME NERVEUX",
+	Fédération pour la recherche sur le cerveau (FRC), date de
+	publication inconnue, consulté en janvier et février 2019. URL:
+	<a href="https://www.frcneurodon.org/comprendre-le-cerveau/a-la-decouverte-du-cerveau/anatomie-du-cerveau-et-du-systeme-nerveux/"><u>https://www.frcneurodon.org/comprendre-le-cerveau/a-la-decouverte-du-cerveau/anatomie-du-cerveau-et-du-systeme-nerveux/</u></a></p>
+
+
+	<p>&nbsp;</p>
+
+
+	<p><u>Article de
+	périodique :</u></p>
+
+<p>-Daniel PRESSNITZER,
+« SON ET MUSIQUE, DE L’ART A LA SCIENCE : NEUROSCIENCES.
+L’ORGANISATION DES SONS : DE L’ILLUSIONS A LA PERCEPTION. »,
+Pour la science, novembre 2008, n°373, p116 à 123</p>
+
+</div></div><div data-silex-type="text" class="editable-style silex-id-1552038730215-40 text-element" data-silex-id="silex-id-1552038730215-40"><div class="silex-element-content normal"><h1>SOURCES<br></h1></div></div><div data-silex-type="text" class="editable-style silex-id-1552140443661-0 text-element" data-silex-id="silex-id-1552140443661-0"><div class="silex-element-content normal"><h2><i>--&gt; LE SON</i><br></h2></div></div><div data-silex-type="text" class="editable-style silex-id-1552215689077-25 text-element" data-silex-id="silex-id-1552215689077-25"><div class="silex-element-content normal"><h2><i>--&gt; LES ILLUSIONS AUDITIVES<br></i></h2></div></div><div data-silex-type="text" class="editable-style silex-id-1552215628920-24 text-element" data-silex-id="silex-id-1552215628920-24"><div class="silex-element-content normal"><p><br></p><p><u>Sites web :</u></p>
+<p>-
+Trevor Henthorn et Diana Deutsch, “DIANA DEUTSCH”, Diana
+Deutsch, publié en 2013
+et consulté en novembre/décembre 2018 et janvier/février 2019.
+URL: <a href="http://deutsch.ucsd.edu/psychology/pages.php?i=101">http://deutsch.ucsd.edu/psychology/pages.php?i=101</a></p>
+<p>-Diana
+Deutsch, “DIANA DEUTSCH'S AUDIO ILLUSIONS”, Philomel Records,
+date de publication inconnue, consulté en décembre 2018 et janvier
+2019, URL: <a href="http://philomel.com/musical_illusions/">http://philomel.com/musical_illusions/</a></p>
+<p>-
+auteur inconnu, “LE
+LANGAGE”, Fédération de la Recherche sur le Cerveau (FRC), date
+de publication inconnue, consulté en janvier/février 2019, URL :
+<a href="https://www.frcneurodon.org/comprendre-le-cerveau/a-la-decouverte-du-cerveau/le-langage/">https://www.frcneurodon.org/comprendre-le-cerveau/a-la-decouverte-du-cerveau/le-langage/</a></p>
+<p>-
+“Taupo”, “LES ILLUSIONS AUDITIVES”, Strange Stuff and Funky
+Things, publié le 9 avril 2012 et consulté en novembre/décembre
+2018 et janvier/février 2019, URL :
+<a href="http://ssaft.com/Blog/dotclear/index.php?post/2012/04/09/Les-Illusions-Auditives">http://ssaft.com/Blog/dotclear/index.php?post/2012/04/09/Les-Illusions-Auditives</a>
+→ ( 
+<a href="http://deutsch.ucsd.edu/pdf/Les_Illusions_Auditives.pdf">http://deutsch.ucsd.edu/pdf/Les_Illusions_Auditives.pdf</a>
+)</p>
+<p>-Eveline
+Vernooij, Angelo Orcalli, Franco Fabbro et Cristiano Crescentini,
+“LISTEN TO THE SHEPARD-RISSET GLISSANDO”, Frontiers in Psychology
+(Frontiers Media SA), publié le 4 mars 2016 et consulté en février
+2019, URL : <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4777920/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4777920/</a></p>
+<p>-Jean-Claude
+RISSET, David WESSEL, « ILLUSIONS AUDITIVES », Encyclopædia
+Universalis [en ligne], consulté le 25 novembre 2018. URL :
+<a href="http://www.universalis.fr/encyclopedie/illusions-auditives/">http://www.universalis.fr/encyclopedie/illusions-auditives/</a></p>
+<p>- Auteur inconnu,
+“ILLUSION ACOUSTIQUE : LA GAMME DE SHEPARD”, Physique de tous les
+jours, publié le 31 mars 2011 et consulté en février 2019, URL :
+<a href="https://questions2physique.wordpress.com/2011/03/31/illusion-acoustique-la-gamme-de-shepard/">https://questions2physique.wordpress.com/2011/03/31/illusion-acoustique-la-gamme-de-shepard/</a></p>
+<p>-Mymy, "LA
+VERITE SUR "YANNY OU LAUREL", L'ILLUSION AUDITIVE QUI ME
+RETOURNE LE CERVEAU", madmoiZelle, publié le 17 mai 2018 :
+<a href="http://www.madmoizelle.com/yanny-laurel-illusion-auditive-920953">http://www.madmoizelle.com/yanny-laurel-illusion-auditive-920953</a></p>
+
+	<p>-Bérangère
+	CONDEMINE, "YANNY OU LAUREL? VOICI L'EXPLICATION SCIENTIFIQUE
+	DE CETTE ILLUSION AUDITIVE QUI RETOURNE LA TOILE", daily geek
+	show, publié le 17 mai 2018, URL : 
+	<a href="https://dailygeekshow.com/yanny-laurel-illusion-sonore/">https://dailygeekshow.com/yanny-laurel-illusion-sonore/</a></p>
+
+
+	<p>-Auteur inconnu,
+	"Effet McGurk", Wikipédia, modifié et publié le 27
+	juillet 2018, version 150743257, URL :
+	<a href="https://fr.wikipedia.org/wiki/Effet_McGurk">https://fr.wikipedia.org/wiki/Effet_McGurk</a></p>
+
+
+	<p>-Auteur inconnu,
+	"L'EFFET MCGURK, UNE ILLUSION AUDITIVE", Le cerveau à
+	tous les niveaux, Science Presse, publié le 16 août 2014, URL :
+	<a href="https://www.sciencepresse.qc.ca/blogue/2014/08/16/leffet-mc-gurk-illusion-auditive">https://www.sciencepresse.qc.ca/blogue/2014/08/16/leffet-mc-gurk-illusion-auditive</a></p>
+
+
+	<p>-Auteur inconnu,
+	"Illusion auditive", Wikipédia, modifié et publié le 11
+	mai 2018, version 148354417, URL : 
+	<a href="https://fr.wikipedia.org/wiki/Illusion_auditive">https://fr.wikipedia.org/wiki/Illusion_auditive</a></p>
+
+<p>-Christian CAVE,
+"Illusions auditives", Médecine, Dossier pour la science
+n°39, Pour la Science, publié le 1 avril 2003, URL :
+<a href="https://www.pourlascience.fr/sd/medecine/illusions-auditives-5035.php">https://www.pourlascience.fr/sd/medecine/illusions-auditives-5035.php</a></p>
+<p>
+<br>
+
+</p>
+<p><u>Article de
+périodique :</u></p>
+<p>
+-Daniel PRESSNITZER, « SON ET MUSIQUE, DE L’ART A LA SCIENCE :
+NEUROSCIENCES. L’ORGANISATION DES SONS : DE L’ILLUSIONS A LA
+PERCEPTION. », Pour la science, novembre 2008, n°373, p116 à 123</p>
+<p>
+<br>
+
+</p>
+<p>
+<u>Vidéo YouTube</u></p>
+<p>-Chaine Youtube
+"AsapSCIENCE", "DO YOU HEAR "YANNY" OR
+"LAUREL"? (SOLVED BY SCIENCE)", publiée le 16 mai
+2018 : <a href="https://www.youtube.com/watch?v=yDiXQl7grPQ">https://www.youtube.com/watch?v=yDiXQl7grPQ</a></p>
+
+<br><p></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552140485970-1 text-element text-editor-focus" data-silex-id="silex-id-1552140485970-1" data-allow-silex-shortcuts="true"><div class="silex-element-content normal"><br><p><u>Sites Web </u>
+</p>
+<p><a></a>
+-Interview du Docteur Jean-Marc Juvanon, « COMMENT LE SON
+ARRIVE-T-Il JUSQU’À NOTRE CERVAU ? », Futura Santé, édité
+par Jean-Luc Goudet, consulté le 17 Novembre 2018 et le 4 Janvier
+2019,URL :
+<a href="https://www.futura-sciences.com/sante/questions-reponses/audition-son-arrive-t-il-jusqua-notre-cerveau-3708/">https://www.futura-sciences.com/sante/questions-reponses/audition-son-arrive-t-il-jusqua-notre-cerveau-3708/</a></p>
+<p>-Intervenants
+pédagogiques :étudiants de grandes écoles ou en préparation du
+CAPES et de l'agrégation,ou professeurs de l'Education National en
+physique , « LE SON », Keepschool, consulté en Décembre
+2018, URL:
+<a href="http://keepschool.com/fiches-de-cours/lycee/physique/son-1.html">http://keepschool.com/fiches-de-cours/lycee/physique/son-1.html</a></p>
+<p>-« SON (
+PHYSIQUE) », Wikipedia, publié le 24 Décembre 2002 et modifié
+jusqu’au 17 Février 2019 , consulté le 12 Février 2019, URL : <a href="https://fr.m.wikipedia.org/wiki/Son_(physique)">https://fr.m.wikipedia.org/wiki/Son_(physique</a>)
+</p>
+<p>-« VITESSE DU
+SON », Wikipedia, publié le 20 Juillet 2003 et modifié jusqu’au
+7 Mars 2019, consulté le 20 Novembre et 27 Décembre , URL:
+<a href="https://fr.m.wikipedia.org/wiki/Vitesse_du_son">https://fr.m.wikipedia.org/wiki/Vitesse_du_son</a></p>
+<p>-De Gorog « 
+DÉFINITION DU SON, L'Étymol. et la formation des mots désignant
+<i>BRUIT </i>en français » CNRS, lexicographe en ligne ,
+consulté en Janvier 2019,URL: <a href="http://www.cnrtl.fr/definition/sons">http://www.cnrtl.fr/definition/sons</a></p>
+<p>-Unisciel et
+l’université de Lille 1, Palais de la Découverte , « LE SON
+ET SES CARACTÉRISTIQUES PHYSIQUES » publié le 16 Février
+2017 , Futura Santé, édité par Jean-Luc Goudet, consulté en
+Décembre 2018 ,URL:
+<a href="https://www.futura-sciences.com/sante/dossiers/medecine-bruit-effets-sante-259/page/3/" target="_blank">https://www.futura-sciences.com/sante/dossiers/medecine-bruit-effets-sante-259/page/3/</a></p>
+<p><br>
+
+</p>
+<p><u>Vidéo YouTube :</u></p>
+<p><u>-</u>Bruno
+Bucher, Frédéric Courant, Jamy Gourmaud, et les journalistes de la
+rédaction, «  QU’EST-CE QU’UN SON ? » publiée le 21
+Juin 2016 , C’est pas Sorcier, éditée par Frédéric Courant,
+Jamy Gourmaud et Bernard Gonner , consultée le 18 Janvier 2019, URL:
+<a href="https://www.youtube.com/watch?v=Q58ns2rLXx8" target="_blank">https://www.youtube.com/watch?v=Q58ns2rLXx8</a></p>
+
+<br></div></div></div></div><div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1552156215807-1 section-element page-illusions-auditives- paged-element" data-silex-id="silex-id-1552156215807-1"><div data-silex-type="container" class="editable-style silex-id-1552156215802-0 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1552156215802-0"><div data-silex-type="text" class="editable-style silex-id-1552210473900-1 text-element page-illusions-auditives- paged-element" data-silex-id="silex-id-1552210473900-1" data-silex-href="#!page-les-illusions-auditives"><div class="silex-element-content normal"><h3>LES ILLUSIONS AUDITIVES<br></h3></div>﻿</div><div data-silex-type="text" class="editable-style silex-id-1552210711065-3 text-element page-illusions-auditives- paged-element" data-silex-id="silex-id-1552210711065-3"><div class="silex-element-content normal"><br><p>Les illusions
+auditives sont des phénomènes sonores perçus par un individu. Il
+existe de nombreux types d'illusions auditives différentes, telles
+que les illusions sonores ou les illusions musicales par exemple.</p>
+
+<br></div></div><div data-silex-type="text" class="editable-style silex-id-1552210742353-4 text-element page-illusions-auditives- paged-element" data-silex-id="silex-id-1552210742353-4"><div class="silex-element-content normal"><br><p>Le glissando de
+Shepard-Risset fait partie des illusions musicales.</p>
+<p>&nbsp; &nbsp;
+Le voici : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+
+<br></div></div><div data-silex-type="html" class="editable-style silex-id-1552210767792-5 html-element page-illusions-auditives- paged-element" data-silex-id="silex-id-1552210767792-5"><div class="silex-element-content"><audio controls="controls">
+    <source src="shepard-risset.mp3" type="audio/mp3">
+    Votre navigateur n'est pas compatible
+</audio></div></div><div data-silex-type="text" class="editable-style silex-id-1552210888184-6 text-element page-illusions-auditives- paged-element" data-silex-id="silex-id-1552210888184-6"><div class="silex-element-content normal"><br><p>Il est possible d'associer cette illusion auditive à l'escalier
+de Penrose, une célèbre illusion d'optique. En effet, peut-être
+avez-vous l'impression que la gamme monte indéfiniment ? Pourtant en
+utilisant une gamme infinie, les ultrasons seraient vite atteints, ce
+qui ne se passe pas ici : cela rend cette illusion très intrigante.</p>
+
+<br></div></div><div data-silex-type="image" class="editable-style silex-id-1552210924174-7 image-element page-illusions-auditives- paged-element" data-silex-id="silex-id-1552210924174-7"><img src="escalier-de-penrose.png" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1552210932537-8 text-element page-illusions-auditives- paged-element" data-silex-id="silex-id-1552210932537-8"><div class="silex-element-content normal"><u>﻿<i>﻿Escalier de Penrose</i></u><br></div></div><div data-silex-type="text" class="editable-style silex-id-1552210519901-2 text-element" data-silex-id="silex-id-1552210519901-2"><div class="silex-element-content normal"><h1>LES ILLUSIONS AUDITIVES ?<br></h1></div></div><div data-silex-type="text" class="editable-style silex-id-1552211022120-9 text-element" data-silex-id="silex-id-1552211022120-9"><div class="silex-element-content normal"><br><p>&nbsp; &nbsp; Cette illusion provient des travaux de Jean-Claude
+Risset qui s'est inspiré de la gamme de Shepard de Roger Shepard, un
+scientifique spécialisé en psychologie cognitive. 
+</p>
+<p>&nbsp; &nbsp; Le glissendo de Shepard-Risset est composé de 12
+sons complexes créés par ordinateur, chaque son étant composé de
+la même note (do, ré...) à six octaves différentes (une octave
+est un intervalle séparant deux notes de même nom) et joué à six
+volumes également différents. Lorsque une note est jouée sur un
+octave moyen, le volume de cette note est élevé tandis que le
+volume est moins fort pour des octaves supérieurs ou inférieurs.</p>
+<p>&nbsp; Chaque même note (chaque do, chaque ré...) à différentes
+octaves sont introduites et enlevées graduellement au glissendo, ce
+qui crée une ambiguïté au niveau du son perçu et donne donc
+l'impression d'une gamme infinie, soit montante soit descendante. 
+</p>
+<p><br>
+<br>
+
+</p>
+
+<br></div></div><div data-silex-type="text" class="editable-style silex-id-1552215249224-21 text-element" data-silex-id="silex-id-1552215249224-21"><div class="silex-element-content normal"><p>Cette illusion peut être représentée par le schéma ci-dessous, où chaque diagonale représente les notes jouées par les instruments utilisés et chaque trait noir horizontal représente une octave.<br></p></div></div><div data-silex-type="image" class="editable-style silex-id-1552212638090-19 image-element" data-silex-id="silex-id-1552212638090-19"><img src="fl%C3%A8che2.jpeg" class="silex-element-content"></div><div data-silex-type="html" class="editable-style silex-id-1552212668879-20 html-element" data-silex-id="silex-id-1552212668879-20" data-silex-href="#!page-diff-rentes-perceptions"><div class="silex-element-content"><button id="MyBtn" onclick="topFunction()" title="Les différentes perceptions des illusions" style="display: block;">Les différentes perceptions des illusions</button></div></div><div data-silex-type="text" class="editable-style silex-id-1552212564765-18 text-element" data-silex-id="silex-id-1552212564765-18"><div class="silex-element-content normal"><br><p>Cependant, certaines
+illusions auditives se caractérisent par une perception différente
+en fonction des personnes : c'est le cas du paradoxe de Triton, des
+mots fantômes ou encore de l'illusion Yanny/Laurel. 
+</p>
+
+<br></div></div><div data-silex-type="html" class="editable-style silex-id-1552212347276-17 html-element" data-silex-id="silex-id-1552212347276-17"><div class="silex-element-content"><video controls="controls" width="900" height="500">
+    <source src="Exp%C3%A9rience%20tpe.mp4.part" type="video/mp4">
+    Votre navigateur n'est pas compatible
+</video></div></div><div data-silex-type="text" class="editable-style silex-id-1552212300061-16 text-element" data-silex-id="silex-id-1552212300061-16"><div class="silex-element-content normal"><br><p>L'explication d'autres illusions auditives repose, quant à elle,
+sur l'habitude du cerveau à vouloir donner constamment une
+signification aux sons perçus. Cette habitude du cerveau peut se
+retrouver dans la compréhension de langues étrangères par exemple,
+souvent des langues que l'on ne maîtrise pas.</p>
+<p>Nous avons donc réalisé une expérience où l'impact de la vue
+sur l'audition ainsi que l'interprétation du cerveau, font entendre
+des groupes de mots n'ayant pas du tout le même sens que les paroles
+prononcées à l'origine.</p>
+
+<br></div></div><div data-silex-type="text" class="editable-style silex-id-1552211877494-12 text-element" data-silex-id="silex-id-1552211877494-12"><div class="silex-element-content normal"><br><p>Avez vous entendu les mêmes sons ?</p>
+<p>À partir de cette expérience, Harry McGurk a conclu que
+l’audition était influencée par ce que l’individu voit. En
+filmant quelqu’un prononçant le son « BA » de façon basique,
+puis, la même personne prononçant toujours le son « BA » tout en
+modifiant la position de ses lèvres afin d’y lire le son “VA”
+ou « FA », il a constaté qu' un son pourtant semblable était
+perçu de différentes façons lorsque les personnes regardaient ou
+non la vidéo. Il en a donc conclu que la vue avait un impact sur
+l'audition.</p>
+
+<br></div></div><div data-silex-type="html" class="editable-style silex-id-1552211168502-11 html-element" data-silex-id="silex-id-1552211168502-11"><div class="silex-element-content"><video controls="controls" width="300" height="500">
+    <source src="Baba.mp4" type="video/mp4">
+    Votre navigateur n'est pas compatible
+</video></div></div><div data-silex-type="image" class="editable-style silex-id-1552215386043-22 image-element" data-silex-id="silex-id-1552215386043-22"><img src="shepard_tone1.jpg" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1552215488832-23 text-element" data-silex-id="silex-id-1552215488832-23"><div class="silex-element-content normal"><br><p>Cette illusion infinie obtenue par répétition cyclique n'est pas
+seulement déroutante mais est aussi utile, car elle a été utilisée
+dans une grande variété d'oeuvres musicales.</p>
+
+<br></div></div><div data-silex-type="text" class="editable-style silex-id-1552211081826-10 text-element" data-silex-id="silex-id-1552211081826-10"><div class="silex-element-content normal"><br><p>Si certaines
+illusions auditives ne reposent que sur l'ouïe, d'autres dépendent
+également d'un autre sens, la vue. </p>
+<p>C'est ce qu'a
+accidentellement mis en lumière le psychologue Harry McGurk dans
+l'effet McGurk. Nous avons essayé de reproduire ce dernier. Écoutez
+dans un premier temps les sons perçus tout en regardant la vidéo.
+Dans un second temps, faîtes de même en fermant les yeux cette
+fois-ci.</p>
+
+<br></div></div><div data-silex-type="text" class="editable-style silex-id-1552212033900-13 text-element" data-silex-id="silex-id-1552212033900-13"><div class="silex-element-content normal"><p><i>﻿La BBC a réalisé et expliqué cet effet dans une vidéo :</i><br></p></div></div><div data-silex-type="text" class="editable-style silex-id-1552212197148-15 text-element" data-silex-id="silex-id-1552212197148-15"><div class="silex-element-content normal"><p><a href="https://youtu.be/G-lN8vWm3m0">https://youtu.be/G-lN8vWm3m0</a><br></p></div></div><div data-silex-type="image" class="editable-style silex-id-1552210463909-0 image-element" data-silex-id="silex-id-1552210463909-0"><img src="can-you-trust-your-ears.jpg" class="silex-element-content"></div></div></div></body></html>
